@@ -1,0 +1,218 @@
+@use "./system" as *;
+/* block
+    ========================================================================== */
+.bl_lv1-heading {
+    font-size: 0px;
+}
+.bl_lv2-heading {
+    font-weight: bold;
+    font-size: 7.2vw;
+    // opacity: 0;
+    @include mq-min('md'){
+        font-size: 64px;
+    }
+}
+.bl_lv3-heading {
+    font-weight: bold;
+    font-size: 5vw;
+    @include mq-min('md'){
+        font-size: 56px;
+    }
+}
+.bl_header-utils {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_logo {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    &_heading {
+        margin-left: 8px;
+    }
+}
+.bl_hamburger {
+    padding: 8px;
+    max-width: 40px;
+    cursor: pointer;
+    position: fixed;
+    top: 4vw;
+    right: 4%;
+    z-index: 998;
+    @include mq-min('lg'){
+        display: none;
+    }
+    .bl_hamburger-btn {
+
+    }
+}
+
+.bl_header-nav {
+    &_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        border-left: solid 1px #cfcfcf;
+        @include mq-min('lg'){
+            height: auto;
+            flex-direction: row;
+            border-left: none;
+        }
+    }
+    &_item:first-of-type {
+        @include mq-min('lg'){
+            display: none;
+        }
+    }
+    &_item {
+        text-align: center;
+        margin-bottom: 7.6vw;
+        @include mq-min('md'){
+            margin-bottom: 40px;
+        }
+        @include mq-min('lg'){
+            margin-bottom: 0;
+            margin-right: 32px;
+        }
+    }
+    &_item:last-of-type {
+        margin-bottom: 0;
+        @include mq-min('lg'){
+            margin-right: 0;
+        }
+    }
+    &_link {
+        font-size: 4.4vw;
+        @include mq-min('md'){
+            font-size: 20px;
+        }
+        @include mq-min('lg'){
+            font-size: 14px;
+        }
+    }
+}
+
+.bl_footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_txt {
+        color: #fff;
+        font-size: 2vw;
+        @include mq-min('md'){
+            font-size: 10px;
+        }
+    }
+}
+
+.bl_kv {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    &_heading {
+
+    }
+    &_txt {
+        // opacity: 0;
+    }
+}
+.bl_object {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -999;
+    // opacity: 0;
+    &_group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-width: 208px;
+        position: absolute;
+        &--01 {
+          animation: right-rotate 100s linear infinite;
+          animation-delay: -6s;
+          z-index: 3;
+        }
+        &--02 {
+          animation: left-rotate 100s linear infinite;
+          z-index: 2;
+        }
+        &--03 {
+          animation: right-rotate 100s linear infinite;
+          animation-delay: 0s;
+          z-index: 1;
+        }
+    }
+    &_box {
+        min-width: 100px;
+        width: 10vw;
+        min-height: 100px;
+        height: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        margin: 2px;
+        border: solid 1px #cfcfcf;
+        // background-color: #f9f9f9;
+        pointer-events: none;
+        @include mq-min('lg'){
+          pointer-events: inherit;
+        }
+    }
+    &_box-txt {
+    animation: left-rotate_txt 100s linear infinite;
+    animation-delay: -6s;
+    opacity: 0;
+    transition: 1s;
+    }
+    &_box:hover .bl_object_box-txt {
+    opacity: 1;
+    transition: 1s;
+    }
+}
+  
+  @keyframes right-rotate {
+    0%   { transform: translate(-50%,-50%) rotate(0deg); }
+    100% { transform: translate(-50%,-50%) rotate(360deg); }
+  }
+  
+  @keyframes left-rotate {
+    0%   { transform: translate(-50%,-50%) rotate(360deg); }
+    100% { transform: translate(-50%,-50%) rotate(0deg); }
+  }
+
+  .bl_grid {
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    @include mq-min('lg'){
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    &_item {
+        margin: 2px 2px 4vw 0;
+        @include mq-min('md'){
+
+        }
+    }
+    &_item:last-of-type {
+        margin-bottom: 0;
+        @include mq-min('lg'){
+            grid-area: 2 / 1 / 2 / 4 ;
+        }
+    }
+    &_heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_link {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+  }

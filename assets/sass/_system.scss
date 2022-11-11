@@ -1,0 +1,30 @@
+$sizes: xl, lg, md, sm, xs;
+
+// min-width
+$breakpoint-min: (
+  'sm': 'screen and (min-width: 426px)',
+  'md': 'screen and (min-width: 769px)',
+  'lg': 'screen and (min-width: 1025px)',
+  'xl': 'screen and (min-width: 1201px)',
+) !default;
+
+// max-width
+$breakpoint-max: (
+  'sm': 'screen and (max-width: 425px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1024px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+// @mixinの定義
+@mixin mq-min($size: md) {
+  @media #{map-get($breakpoint-min, $size)} {
+    @content;
+  }
+}
+
+@mixin mq-max($size: md) {
+  @media #{map-get($breakpoint-max, $size)} {
+    @content;
+  }
+}
