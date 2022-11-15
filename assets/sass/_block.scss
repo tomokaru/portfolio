@@ -103,7 +103,7 @@
     align-items: center;
     justify-content: center;
     &_txt {
-        color: #fff;
+        color: #333;
         font-size: 2vw;
         @include mq-min('md'){
             font-size: 10px;
