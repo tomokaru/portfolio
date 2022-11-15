@@ -84,7 +84,6 @@ body {
 }
 
 .bl_lv3-heading {
-  font-weight: bold;
   font-size: 5vw;
 }
 @media screen and (min-width: 769px) {
@@ -456,7 +455,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  font-weight: bold;
 }
 
 .splash-logo span {
