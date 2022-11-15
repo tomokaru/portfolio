@@ -3,8 +3,11 @@
 /* layout
   ========================================================================== */
 .ly_header {
-  padding: 4vw 0 0 0;
+  padding: 5vw 0 0 0;
   margin-bottom: 1vw;
+  @include mq-max('md'){
+    padding: 3vw 0 0 0;
+  }
   &_inner {
     width: 92%;
     margin: 0 auto;
