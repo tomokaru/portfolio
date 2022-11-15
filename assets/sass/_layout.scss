@@ -5,7 +5,7 @@
 .ly_header {
   padding: 5vw 0 0 0;
   margin-bottom: 1vw;
-  @include mq-max('md'){
+  @include mq-min('md'){
     padding: 3vw 0 0 0;
   }
   &_inner {
@@ -25,7 +25,7 @@
 
 }
 .ly_section {
-  // padding: 16px 0;
+  margin: 8vw 0;
       &_inner {
         width: 92%;
         margin: 0 auto;

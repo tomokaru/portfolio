@@ -23,7 +23,7 @@ body {
   padding: 5vw 0 0 0;
   margin-bottom: 1vw;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   .ly_header {
     padding: 3vw 0 0 0;
   }
@@ -40,6 +40,9 @@ body {
   }
 }
 
+.ly_section {
+  margin: 8vw 0;
+}
 .ly_section_inner {
   width: 92%;
   margin: 0 auto;
@@ -62,10 +65,6 @@ body {
 
 /* block
     ========================================================================== */
-.bl_lv1-heading {
-  font-size: 0px;
-}
-
 .bl_lv2-heading {
   font-size: 7.2vw;
 }
@@ -290,6 +289,10 @@ body {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
+.bl_section-heading {
+  text-align: center;
+}
+
 /* unique
   ========================================================================== */
 /* helper

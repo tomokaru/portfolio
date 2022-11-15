@@ -2,7 +2,7 @@
 /* block
     ========================================================================== */
 .bl_lv1-heading {
-    font-size: 0px;
+    // font-size: 0px;
 }
 .bl_lv2-heading {
     // font-weight: bold;
@@ -180,12 +180,16 @@
     }
 }
   
-  @keyframes right-rotate {
-    0%   { transform: translate(-50%,-50%) rotate(0deg); }
-    100% { transform: translate(-50%,-50%) rotate(360deg); }
-  }
-  
-  @keyframes left-rotate {
-    0%   { transform: translate(-50%,-50%) rotate(360deg); }
-    100% { transform: translate(-50%,-50%) rotate(0deg); }
-  }
+@keyframes right-rotate {
+0%   { transform: translate(-50%,-50%) rotate(0deg); }
+100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+
+@keyframes left-rotate {
+0%   { transform: translate(-50%,-50%) rotate(360deg); }
+100% { transform: translate(-50%,-50%) rotate(0deg); }
+}
+
+.bl_section-heading {
+    text-align: center;
+}
