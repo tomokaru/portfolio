@@ -1,6 +1,9 @@
 @use "./system" as *;
 /* block
     ========================================================================== */
+.bl_section-heading {
+    // text-align: center;
+}
 .bl_lv1-heading {
     // font-size: 0px;
 }
@@ -9,15 +12,26 @@
     font-size: 7.2vw;
     // opacity: 0;
     @include mq-min('md'){
-        font-size: 64px;
+        font-size: 56px;
     }
 }
 .bl_lv3-heading {
     // font-weight: bold;
-    font-size: 5vw;
+    font-size: 6vw;
+    margin-bottom: 3vw;
     @include mq-min('md'){
-        font-size: 56px;
+        font-size: 40px;
+        margin-bottom: 1vw;
     }
+}
+.bl_cont {
+    @include mq-min('md'){
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+.bl_txt {
+    margin-bottom: 16px;
 }
 .bl_header-utils {
     display: flex;
@@ -38,7 +52,7 @@
     cursor: pointer;
     position: fixed;
     top: 4vw;
-    right: 4%;
+    right: 5%;
     z-index: 998;
     @include mq-min('lg'){
         display: none;
@@ -188,8 +202,4 @@
 @keyframes left-rotate {
 0%   { transform: translate(-50%,-50%) rotate(360deg); }
 100% { transform: translate(-50%,-50%) rotate(0deg); }
-}
-
-.bl_section-heading {
-    text-align: center;
 }

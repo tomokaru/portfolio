@@ -29,7 +29,7 @@ body {
   }
 }
 .ly_header_inner {
-  width: 92%;
+  width: 90%;
   margin: 0 auto;
 }
 @media screen and (min-width: 1025px) {
@@ -46,6 +46,9 @@ body {
 .ly_section_inner {
   width: 92%;
   margin: 0 auto;
+}
+.ly_section:first-of-type {
+  margin: 32px 0;
 }
 
 .ly_footer {
@@ -70,17 +73,30 @@ body {
 }
 @media screen and (min-width: 769px) {
   .bl_lv2-heading {
-    font-size: 64px;
+    font-size: 56px;
   }
 }
 
 .bl_lv3-heading {
-  font-size: 5vw;
+  font-size: 6vw;
+  margin-bottom: 3vw;
 }
 @media screen and (min-width: 769px) {
   .bl_lv3-heading {
-    font-size: 56px;
+    font-size: 40px;
+    margin-bottom: 1vw;
   }
+}
+
+@media screen and (min-width: 769px) {
+  .bl_cont {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.bl_txt {
+  margin-bottom: 16px;
 }
 
 .bl_header-utils {
@@ -103,7 +119,7 @@ body {
   cursor: pointer;
   position: fixed;
   top: 4vw;
-  right: 4%;
+  right: 5%;
   z-index: 998;
 }
 @media screen and (min-width: 1025px) {
@@ -289,16 +305,8 @@ body {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
-.bl_section-heading {
-  text-align: center;
-}
-
 /* unique
   ========================================================================== */
-.un_profile_txt {
-  margin-bottom: 16px;
-}
-
 /* helper
   ========================================================================== */
 /* program

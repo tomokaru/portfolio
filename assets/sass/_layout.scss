@@ -9,7 +9,7 @@
     padding: 3vw 0 0 0;
   }
   &_inner {
-    width: 92%;
+    width: 90%;
     margin: 0 auto;
     @include mq-min('lg'){
       display: flex;
@@ -29,6 +29,9 @@
       &_inner {
         width: 92%;
         margin: 0 auto;
+  }
+  &:first-of-type {
+    margin: 32px 0;
   }
 }
 .ly_footer {
