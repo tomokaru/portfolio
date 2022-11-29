@@ -10,9 +10,9 @@ body {
   background-color: #fff;
 	letter-spacing: 0.05em;
 	line-height: 1.5;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	color: #333;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	@include mq-min('md'){
+    font-size: 1.6rem;
+  }
 }
