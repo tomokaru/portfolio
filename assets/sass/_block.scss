@@ -6,19 +6,20 @@
 }
 .bl_lv1-heading {
     // font-size: 0px;
+    letter-spacing: 0.07em;
 }
 .bl_lv2-heading {
-    // font-weight: bold;
     font-size: 7.2vw;
+    letter-spacing: 0.05em;
     // opacity: 0;
     @include mq-min('md'){
         font-size: 56px;
     }
 }
 .bl_lv3-heading {
-    // font-weight: bold;
     font-size: 6vw;
     margin-bottom: 3vw;
+    letter-spacing: 0.05em;
     @include mq-min('md'){
         font-size: 40px;
         margin-bottom: 1vw;
@@ -102,11 +103,11 @@
     &_link {
         font-size: 4.4vw;
         color: #fff;
+        letter-spacing: 0.1em;
         @include mq-min('md'){
-            font-size: 20px;
+            font-size: 16px;
         }
         @include mq-min('lg'){
-            font-size: 14px;
             color: #333;
         }
     }
@@ -119,8 +120,9 @@
     &_txt {
         color: #333;
         font-size: 2vw;
+        letter-spacing: 0.07em;
         @include mq-min('md'){
-            font-size: 10px;
+            font-size: 12px;
         }
     }
 }
@@ -137,6 +139,7 @@
     }
     &_txt {
         // opacity: 0;
+        letter-spacing: 0.07em;
     }
 }
 .bl_object {

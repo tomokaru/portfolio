@@ -3,14 +3,14 @@
 @use "./system" as *;
 html {
 	font-size: 62.5%;
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Mukta', sans-serif;
 }
 body {
 	min-height: 100vh;
   background-color: #fff;
 	letter-spacing: 0.05em;
 	line-height: 1.5;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	color: #333;
 	display: flex;
 	flex-direction: column;

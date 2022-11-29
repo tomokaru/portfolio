@@ -3,7 +3,7 @@
 --------------------------- */
 html {
   font-size: 62.5%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Mukta", sans-serif;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   background-color: #fff;
   letter-spacing: 0.05em;
   line-height: 1.5;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -69,8 +69,13 @@ body {
 
 /* block
     ========================================================================== */
+.bl_lv1-heading {
+  letter-spacing: 0.07em;
+}
+
 .bl_lv2-heading {
   font-size: 7.2vw;
+  letter-spacing: 0.05em;
 }
 @media screen and (min-width: 769px) {
   .bl_lv2-heading {
@@ -81,6 +86,7 @@ body {
 .bl_lv3-heading {
   font-size: 6vw;
   margin-bottom: 3vw;
+  letter-spacing: 0.05em;
 }
 @media screen and (min-width: 769px) {
   .bl_lv3-heading {
@@ -175,15 +181,15 @@ body {
 .bl_header-nav_link {
   font-size: 4.4vw;
   color: #fff;
+  letter-spacing: 0.1em;
 }
 @media screen and (min-width: 769px) {
   .bl_header-nav_link {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1025px) {
   .bl_header-nav_link {
-    font-size: 14px;
     color: #333;
   }
 }
@@ -196,10 +202,11 @@ body {
 .bl_footer-copyright_txt {
   color: #333;
   font-size: 2vw;
+  letter-spacing: 0.07em;
 }
 @media screen and (min-width: 769px) {
   .bl_footer-copyright_txt {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -211,6 +218,10 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.bl_kv_txt {
+  letter-spacing: 0.07em;
+}
+
 .bl_object {
   position: absolute;
   top: 50%;
