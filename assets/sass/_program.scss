@@ -79,6 +79,7 @@
   display: block;
   transform: translate(0, 103%);
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  font-family: 'Roboto', sans-serif;
 }
 .splash-logo.-visible span {
   transform: translate(0, 0);
