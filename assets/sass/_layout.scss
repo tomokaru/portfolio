@@ -30,8 +30,11 @@
     margin: 0 0 120px 0;
   }
   &_inner {
-    width: 98%;
+    width: 92%;
     margin: 0 auto;
+    @include mq-min('md'){
+      width: 98%;
+    }
   }
   &:first-of-type {
     margin: 32px 0;
