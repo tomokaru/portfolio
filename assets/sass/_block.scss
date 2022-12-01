@@ -9,14 +9,6 @@
     letter-spacing: 0.07em;
 }
 .bl_lv2-heading {
-    font-size: 7.2vw;
-    letter-spacing: 0.05em;
-    // opacity: 0;
-    @include mq-min('md'){
-        font-size: 56px;
-    }
-}
-.bl_lv3-heading {
     font-size: 6vw;
     margin-bottom: 3vw;
     letter-spacing: 0.05em;
@@ -25,11 +17,15 @@
         margin-bottom: 1vw;
     }
 }
-.bl_container {
+.bl_lv3-heading {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    letter-spacing: 0.05em;
+    border-bottom: solid 1px #333;
+    padding-bottom: 0.1em;
     @include mq-min('md'){
-        max-width: 1000px;
-        margin: 0 auto;
-        width: 92%;
+        font-size: 24px;
+        margin-bottom: 1vw;
     }
 }
 .bl_txt {
@@ -135,8 +131,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    &_heading {
-        // font-weight: 500;
+    &_ttl {
+        font-size: 7.2vw;
+        letter-spacing: 0.05em;
+        // opacity: 0;
+        @include mq-min('md'){
+            font-size: 56px;
+        }
     }
     &_txt {
         // opacity: 0;

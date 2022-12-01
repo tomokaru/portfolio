@@ -44,20 +44,21 @@ body {
 }
 
 .ly_section {
-  margin: 0 0 80px 0;
+  margin: 0 auto 80px auto;
 }
 @media screen and (min-width: 769px) {
   .ly_section {
-    margin: 0 0 120px 0;
+    margin: 0 auto 120px auto;
   }
 }
 .ly_section_inner {
-  width: 92%;
+  width: 90%;
   margin: 0 auto;
 }
 @media screen and (min-width: 769px) {
   .ly_section_inner {
-    width: 98%;
+    max-width: 1000px;
+    width: 92%;
   }
 }
 .ly_section:first-of-type {
@@ -86,32 +87,28 @@ body {
 }
 
 .bl_lv2-heading {
-  font-size: 7.2vw;
-  letter-spacing: 0.05em;
-}
-@media screen and (min-width: 769px) {
-  .bl_lv2-heading {
-    font-size: 56px;
-  }
-}
-
-.bl_lv3-heading {
   font-size: 6vw;
   margin-bottom: 3vw;
   letter-spacing: 0.05em;
 }
 @media screen and (min-width: 769px) {
-  .bl_lv3-heading {
+  .bl_lv2-heading {
     font-size: 40px;
     margin-bottom: 1vw;
   }
 }
 
+.bl_lv3-heading {
+  font-size: 5vw;
+  margin-bottom: 2vw;
+  letter-spacing: 0.05em;
+  border-bottom: solid 1px #333;
+  padding-bottom: 0.1em;
+}
 @media screen and (min-width: 769px) {
-  .bl_container {
-    max-width: 1000px;
-    margin: 0 auto;
-    width: 92%;
+  .bl_lv3-heading {
+    font-size: 24px;
+    margin-bottom: 1vw;
   }
 }
 
@@ -230,6 +227,15 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+.bl_kv_ttl {
+  font-size: 7.2vw;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 769px) {
+  .bl_kv_ttl {
+    font-size: 56px;
+  }
 }
 .bl_kv_txt {
   letter-spacing: 0.07em;
