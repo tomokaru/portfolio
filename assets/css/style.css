@@ -108,7 +108,6 @@ body {
 @media screen and (min-width: 769px) {
   .bl_lv3-heading {
     font-size: 24px;
-    margin-bottom: 1vw;
   }
 }
 
@@ -336,6 +335,21 @@ body {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
+.bl_work {
+  margin-bottom: 3em;
+}
+.bl_work_head {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.bl_work_ttl {
+  text-align: right;
+  margin-top: 0.3em;
+}
+.bl_work_body {
+  display: none;
+}
+
 /* unique
   ========================================================================== */
 /* helper
