@@ -209,14 +209,15 @@
 }
 
 .bl_work {
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     &_head {
         display: flex;
         flex-direction: column-reverse;
     }
     &_ttl {
+        font-size: 0;
+        color: #777;
         text-align: right;
-
         margin-top: 0.3em;
     }
     &_mv {
