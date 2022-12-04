@@ -210,14 +210,15 @@
 
 .bl_work {
     margin-bottom: 4em;
+    // background-color: #f7f7f7;
     &_head {
         display: flex;
         flex-direction: column-reverse;
     }
-    &_ttl {
-        font-size: 0;
+    &_lv1heading {
+        font-size: 14px;
         color: #777;
-        text-align: right;
+        // text-align: right;
         margin-top: 0.3em;
     }
     &_mv {

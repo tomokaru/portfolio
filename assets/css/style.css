@@ -342,10 +342,9 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
-.bl_work_ttl {
-  font-size: 0;
+.bl_work_lv1heading {
+  font-size: 14px;
   color: #777;
-  text-align: right;
   margin-top: 0.3em;
 }
 .bl_work_body {
