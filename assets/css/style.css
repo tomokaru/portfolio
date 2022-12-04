@@ -83,7 +83,7 @@ body {
 /* block
     ========================================================================== */
 .bl_lv1-heading {
-  letter-spacing: 0.07em;
+  letter-spacing: 0.3em;
   color: #444;
 }
 
@@ -128,10 +128,6 @@ body {
   align-items: center;
   flex-direction: row-reverse;
 }
-.bl_header-utils_heading {
-  margin-left: 8px;
-}
-
 .bl_hamburger {
   padding: 8px;
   max-width: 40px;
@@ -231,7 +227,7 @@ body {
 }
 .bl_kv_ttl {
   font-size: 7.2vw;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.3em;
   color: #444;
 }
 @media screen and (min-width: 769px) {
@@ -240,7 +236,7 @@ body {
   }
 }
 .bl_kv_txt {
-  letter-spacing: 0.07em;
+  letter-spacing: 0.3em;
   color: #444;
 }
 
@@ -454,7 +450,7 @@ body {
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   border: solid 1px #cfcfcf;
   padding: 0.25em 0.3em 0.1em 0.3em;
-  margin: 0 2px;
+  margin: 0 1px;
   line-height: 1;
 }
 
