@@ -452,7 +452,7 @@ body {
   display: block;
   transform: translate(0, 103%);
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  border: solid 1px #444;
+  border: solid 1px #cfcfcf;
   padding: 0.25em 0.3em 0.1em 0.3em;
   margin: 0 2px;
   line-height: 1;
