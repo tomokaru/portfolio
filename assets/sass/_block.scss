@@ -63,19 +63,14 @@
 
 .bl_header-nav {
     height: 100vh;
-    background-color: #444;
     @include mq-min('lg'){
         height: auto;
     }
     &_list {
         position: absolute;
-        /* top: 50%; */
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, 0%);
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        transform: translate(-50%, -50%);
         @include mq-min('lg'){
             display: flex;
             justify-content: end;
@@ -107,16 +102,18 @@
     }
     &_link {
         font-size: 4.4vw;
-        color: #fff;
+        color: #444;
         letter-spacing: 0.1em;
         display: block;
-        border: solid 1px #fff;
+        border: solid 1px #cfcfcf;
         padding: 0.3em 0.7em 0.2em 0.7em;
+        background-color: #ffffff50;
         @include mq-min('md'){
             font-size: 16px;
         }
         @include mq-min('lg'){
             color: #444;
+            border: solid 0px #cfcfcf;
         }
     }
 }

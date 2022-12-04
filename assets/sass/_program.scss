@@ -8,7 +8,7 @@
   left: 100%;
   transform: translate(0,-50%);
   transition: 0.7s;
-  background-color: #444;
+  // background-color: #fff;
   width: 50%;
   z-index: 997;
   @include mq-min('md'){
@@ -42,7 +42,7 @@
   &.on {
     transform: translateX(0) translateY(3px) rotate(45deg);
     transition: 0.4s;
-    background-color: #fff;
+    background-color: #444;
   }
 }
 .js_hamburger-btn_line:last-of-type {
