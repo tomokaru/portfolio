@@ -51,7 +51,6 @@
     max-width: 40px;
     cursor: pointer;
     position: fixed;
-    top: 8vw;
     right: 5%;
     z-index: 998;
     @include mq-min('lg'){
@@ -63,18 +62,21 @@
 }
 
 .bl_header-nav {
+    height: 100vh;
+    background-color: #444;
+    @include mq-min('lg'){
+        height: auto;
+    }
     &_list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: #444;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         @include mq-min('lg'){
-            height: auto;
-            flex-direction: row;
-            border-left: none;
-            background-color: #fff;
+            display: flex;
+            justify-content: end;
+            position: static;
+            transform: translate(0,0);
         }
     }
     &_item:first-of-type {
@@ -103,6 +105,9 @@
         font-size: 4.4vw;
         color: #fff;
         letter-spacing: 0.1em;
+        display: block;
+        border: solid 1px #fff;
+        padding: 0.3em 0.7em 0.2em 0.7em;
         @include mq-min('md'){
             font-size: 16px;
         }

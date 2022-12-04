@@ -8,7 +8,7 @@
   left: 100%;
   transform: translate(0,-50%);
   transition: 0.7s;
-  background-color: #fff;
+  background-color: #444;
   width: 50%;
   z-index: 997;
   @include mq-min('md'){
@@ -16,10 +16,12 @@
   }
   @include mq-min('lg'){
     position: static;
-    top: auto;
-    left: auto;
-    width: auto;
+    // top: auto;
+    // left: auto;
+    // width: auto;
     background-color: unset;
+    transform: translate(0, 0);
+    width: 100%;
   }
   &.on {
     left: 50%;
