@@ -8,21 +8,20 @@
   left: 100%;
   transform: translate(0,-50%);
   transition: 0.7s;
-  background-color: #fff;
-  width: 100%;
+  background-color: #444;
+  width: 50%;
   z-index: 997;
   @include mq-min('md'){
     width: 30%;
   }
   @include mq-min('lg'){
     position: static;
-    top: auto;
-    left: auto;
-    width: auto;
     background-color: unset;
+    transform: translate(0, 0);
+    width: 100%S;
   }
   &.on {
-    left: 0%;
+    left: 50%;
     transition: 0.7s;
     @include mq-min('md'){
       left: 70%;
