@@ -33,7 +33,7 @@
   display: block;
   width: 20px;
   height: 1px;
-  background-color: #333;
+  background-color: #444;
   margin-bottom: 4px;
   transition: 0.4s;
     @include mq-min('lg'){
@@ -63,7 +63,7 @@
   background: #f9f9f9;
   z-index: 999;
   text-align:center;
-  color:#333;
+  color:#444;
 }
 
 .splash-logo {
@@ -79,7 +79,9 @@
   display: block;
   transform: translate(0, 103%);
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  font-family: 'Roboto', sans-serif;
+  border: solid 1px #444;
+  padding: 0 0.3em;
+  margin: 0 2px;
 }
 .splash-logo.-visible span {
   transform: translate(0, 0);

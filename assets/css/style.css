@@ -12,7 +12,7 @@ body {
   letter-spacing: 0.05em;
   line-height: 1.5;
   font-size: 1.4rem;
-  color: #333;
+  color: #555;
 }
 @media screen and (min-width: 769px) {
   body {
@@ -84,6 +84,7 @@ body {
     ========================================================================== */
 .bl_lv1-heading {
   letter-spacing: 0.07em;
+  color: #444;
 }
 
 .bl_lv2-heading {
@@ -103,8 +104,9 @@ body {
   font-size: 5vw;
   margin-bottom: 2vw;
   letter-spacing: 0.05em;
-  border-bottom: solid 1px #333;
+  border-bottom: solid 1px #444;
   padding-bottom: 0.1em;
+  color: #444;
 }
 @media screen and (min-width: 769px) {
   .bl_lv3-heading {
@@ -150,7 +152,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #333;
+  background-color: #444;
 }
 @media screen and (min-width: 1025px) {
   .bl_header-nav_list {
@@ -200,7 +202,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .bl_header-nav_link {
-    color: #333;
+    color: #444;
   }
 }
 
@@ -210,7 +212,6 @@ body {
   justify-content: center;
 }
 .bl_footer-copyright_txt {
-  color: #333;
   font-size: 2vw;
   letter-spacing: 0.07em;
 }
@@ -231,6 +232,7 @@ body {
 .bl_kv_ttl {
   font-size: 7.2vw;
   letter-spacing: 0.05em;
+  color: #444;
 }
 @media screen and (min-width: 769px) {
   .bl_kv_ttl {
@@ -239,6 +241,7 @@ body {
 }
 .bl_kv_txt {
   letter-spacing: 0.07em;
+  color: #444;
 }
 
 .bl_object {
@@ -350,6 +353,7 @@ body {
 .bl_work_lv1heading {
   font-size: 16px;
   margin-bottom: 2vw;
+  color: #444;
 }
 
 /* unique
@@ -400,7 +404,7 @@ body {
   display: block;
   width: 20px;
   height: 1px;
-  background-color: #333;
+  background-color: #444;
   margin-bottom: 4px;
   transition: 0.4s;
 }
@@ -432,7 +436,7 @@ body {
   background: #f9f9f9;
   z-index: 999;
   text-align: center;
-  color: #333;
+  color: #444;
 }
 
 .splash-logo {
@@ -448,7 +452,9 @@ body {
   display: block;
   transform: translate(0, 103%);
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  font-family: "Roboto", sans-serif;
+  border: solid 1px #444;
+  padding: 0 0.3em;
+  margin: 0 2px;
 }
 
 .splash-logo.-visible span {
