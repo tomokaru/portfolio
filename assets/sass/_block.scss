@@ -12,6 +12,7 @@
     font-size: 6vw;
     margin-bottom: 3vw;
     letter-spacing: 0.05em;
+    color: #1295b8;
     @include mq-min('md'){
         font-size: 40px;
         margin-bottom: 1vw;
@@ -210,21 +211,19 @@
 
 .bl_work {
     margin-bottom: 4em;
-    // background-color: #f7f7f7;
     &_head {
         display: flex;
         flex-direction: column-reverse;
     }
-    &_lv1heading {
-        font-size: 14px;
-        color: #777;
-        // text-align: right;
-        margin-top: 0.3em;
-    }
     &_mv {
-
+        
     }
     &_body {
-        display: none;
+        font-size: 14px;
+        margin-top: 3vw;
+    }
+    &_lv1heading {
+        font-size: 16px;
+        margin-bottom: 2vw;
     }
 }

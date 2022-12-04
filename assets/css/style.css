@@ -90,6 +90,7 @@ body {
   font-size: 6vw;
   margin-bottom: 3vw;
   letter-spacing: 0.05em;
+  color: #1295b8;
 }
 @media screen and (min-width: 769px) {
   .bl_lv2-heading {
@@ -342,13 +343,13 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
-.bl_work_lv1heading {
-  font-size: 14px;
-  color: #777;
-  margin-top: 0.3em;
-}
 .bl_work_body {
-  display: none;
+  font-size: 14px;
+  margin-top: 3vw;
+}
+.bl_work_lv1heading {
+  font-size: 16px;
+  margin-bottom: 2vw;
 }
 
 /* unique
