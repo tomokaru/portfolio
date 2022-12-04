@@ -49,6 +49,11 @@ body {
   transition: 0.7s;
   filter: blur(4px);
 }
+@media screen and (min-width: 1025px) {
+  .ly_wrapper.on {
+    filter: none;
+  }
+}
 
 .ly_section {
   margin: 0 auto 80px auto;

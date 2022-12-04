@@ -22,6 +22,9 @@
   &.on {
     transition: 0.7s;
     filter: blur(4px);
+    @include mq-min('lg'){
+      filter: none;
+    }
   }
 }
 .ly_main {
