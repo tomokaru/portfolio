@@ -140,6 +140,10 @@ body {
   align-items: center;
   flex-direction: row-reverse;
 }
+.bl_header-utils_heading {
+  margin-left: 16px;
+}
+
 .bl_hamburger {
   padding: 8px;
   max-width: 40px;
