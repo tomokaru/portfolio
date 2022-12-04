@@ -248,6 +248,7 @@
     }
     &_dt {
         font-size: 11px;
+        position: relative;
         @include mq-min('md'){
             position: absolute;
             font-size: 14px;
@@ -256,13 +257,15 @@
         }
     }
     &_dt::after {
-        content:":";
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 100%;
-        transform: translate(100%, -58%);
-        font-size: 20px;
+        @include mq-min('md'){
+            content:":";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translate(100%, -58%);
+            font-size: 20px;
+        }
     }
     &_dd {
         color: #444;

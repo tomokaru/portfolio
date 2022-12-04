@@ -378,6 +378,7 @@ body {
 }
 .bl_work_dt {
   font-size: 11px;
+  position: relative;
 }
 @media screen and (min-width: 769px) {
   .bl_work_dt {
@@ -387,14 +388,16 @@ body {
     min-width: 100px;
   }
 }
-.bl_work_dt::after {
-  content: ":";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translate(100%, -58%);
-  font-size: 20px;
+@media screen and (min-width: 769px) {
+  .bl_work_dt::after {
+    content: ":";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(100%, -58%);
+    font-size: 20px;
+  }
 }
 .bl_work_dd {
   color: #444;
