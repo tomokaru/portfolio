@@ -368,7 +368,7 @@ body {
   transform: translate(0, -50%);
   transition: 0.7s;
   background-color: #fff;
-  width: 100%;
+  width: 50%;
   z-index: 997;
 }
 @media screen and (min-width: 769px) {
@@ -386,7 +386,7 @@ body {
   }
 }
 .js_header-nav.on {
-  left: 0%;
+  left: 50%;
   transition: 0.7s;
 }
 @media screen and (min-width: 769px) {
