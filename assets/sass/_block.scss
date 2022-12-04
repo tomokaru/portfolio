@@ -23,7 +23,7 @@
     font-size: 5vw;
     margin-bottom: 2vw;
     letter-spacing: 0.05em;
-    border-bottom: solid 1px #444;
+    border-bottom: solid 1px #cfcfcf;
     padding-bottom: 0.1em;
     color: #444;
     @include mq-min('md'){
@@ -107,7 +107,8 @@
         display: block;
         border: solid 1px #cfcfcf;
         padding: 0.3em 0.7em 0.2em 0.7em;
-        background-color: #ffffff50;
+        // background-color: #ffffff50;
+        color: #fff;
         @include mq-min('md'){
             font-size: 16px;
         }
