@@ -465,10 +465,10 @@ body {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
 }
 
 @-webkit-keyframes ttl {
@@ -476,9 +476,11 @@ body {
     opacity: 0;
     transform: translateY(30%);
   }
+  90% {
+    transform: translateY(0);
+  }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -487,9 +489,11 @@ body {
     opacity: 0;
     transform: translateY(30%);
   }
+  90% {
+    transform: translateY(0);
+  }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 .un_animation_txt {
@@ -501,8 +505,8 @@ body {
   animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 3.2s;
-  animation-delay: 3.2s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 @-webkit-keyframes txt {
@@ -510,9 +514,11 @@ body {
     opacity: 0;
     transform: translateY(30%);
   }
+  90% {
+    transform: translateY(0);
+  }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -521,9 +527,11 @@ body {
     opacity: 0;
     transform: translateY(30%);
   }
+  90% {
+    transform: translateY(0);
+  }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 .un_animation_object {

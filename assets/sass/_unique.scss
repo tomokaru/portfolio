@@ -7,17 +7,19 @@
   animation-name: ttl;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-delay: 3s;
+  animation-duration: 1.2s;
+  animation-delay: 2.8s;
 }
 @keyframes ttl {
     0% {
         opacity: 0;
         transform: translateY(30%);
     }
+    90% {
+      transform: translateY(0);
+    }
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -26,16 +28,18 @@
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-  animation-delay: 3.2s;
+  animation-delay: 3s;
 }
 @keyframes txt {
     0% {
         opacity: 0;
         transform: translateY(30%);
     }
+    90% {
+      transform: translateY(0);
+    }
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 .un_animation_object {
