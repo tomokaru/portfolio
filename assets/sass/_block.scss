@@ -126,12 +126,15 @@
 }
 
 .bl_kv {
-    height: 80vh;
+    height: 72vh;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    @include mq-min('md'){
+        height: 80vh;
+    }
     &_ttl {
         font-size: 7.2vw;
         letter-spacing: 0.3em;
