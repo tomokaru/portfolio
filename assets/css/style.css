@@ -130,6 +130,10 @@ body {
   margin-bottom: 16px;
 }
 
+.bl_link {
+  color: #777;
+}
+
 .bl_header-utils {
   display: flex;
   justify-content: space-between;
@@ -243,7 +247,9 @@ body {
   }
 }
 
-.bl_kv {
+/* unique
+  ========================================================================== */
+.un_kv {
   height: 72vh;
   position: relative;
   display: flex;
@@ -252,59 +258,60 @@ body {
   justify-content: center;
 }
 @media screen and (min-width: 769px) {
-  .bl_kv {
+  .un_kv {
     height: 80vh;
   }
 }
-.bl_kv_ttl {
+.un_kv_ttl {
   font-size: 7.2vw;
   letter-spacing: 0.3em;
   color: #444;
   opacity: 0;
 }
 @media screen and (min-width: 769px) {
-  .bl_kv_ttl {
+  .un_kv_ttl {
     font-size: 56px;
   }
 }
-.bl_kv_txt {
+.un_kv_txt {
   opacity: 0;
   letter-spacing: 0.3em;
   color: #444;
 }
 
-.bl_object {
+.un_object {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: -999;
+  opacity: 0;
 }
-.bl_object_group {
+.un_object_group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-width: 208px;
   position: absolute;
 }
-.bl_object_group--01 {
+.un_object_group--01 {
   -webkit-animation: right-rotate 100s linear infinite;
   animation: right-rotate 100s linear infinite;
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
   z-index: 3;
 }
-.bl_object_group--02 {
+.un_object_group--02 {
   -webkit-animation: left-rotate 100s linear infinite;
   animation: left-rotate 100s linear infinite;
   z-index: 2;
 }
-.bl_object_group--03 {
+.un_object_group--03 {
   -webkit-animation: right-rotate 100s linear infinite;
   animation: right-rotate 100s linear infinite;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   z-index: 1;
 }
-.bl_object_box {
+.un_object_box {
   min-width: 100px;
   width: 10vw;
   min-height: 100px;
@@ -318,11 +325,11 @@ body {
   pointer-events: none;
 }
 @media screen and (min-width: 1025px) {
-  .bl_object_box {
+  .un_object_box {
     pointer-events: inherit;
   }
 }
-.bl_object_box-txt {
+.un_object_box-txt {
   -webkit-animation: left-rotate_txt 100s linear infinite;
   animation: left-rotate_txt 100s linear infinite;
   -webkit-animation-delay: -6s;
@@ -330,7 +337,7 @@ body {
   opacity: 0;
   transition: 1s;
 }
-.bl_object_box:hover .bl_object_box-txt {
+.un_object_box:hover .bl_object_box-txt {
   opacity: 1;
   transition: 1s;
 }
@@ -368,100 +375,6 @@ body {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
-.bl_work {
-  margin-bottom: 4em;
-}
-.bl_work_head {
-  display: flex;
-  flex-direction: column-reverse;
-  cursor: pointer;
-  transition: 0.7s;
-  overflow: hidden;
-}
-.bl_work_head:hover {
-  opacity: 0.7;
-  transition: 0.7s;
-}
-.bl_work_mv {
-  transition: 0.7s;
-}
-.bl_work_mv:hover {
-  transform: scale(1.03);
-  transition: 0.7s;
-}
-.bl_work_body {
-  font-size: 14px;
-  margin-top: 6vw;
-  overflow: hidden;
-  max-height: 0px;
-  transition: 0.7s;
-}
-@media screen and (min-width: 769px) {
-  .bl_work_body {
-    margin-top: 2vw;
-  }
-}
-.bl_work_body.on {
-  max-height: 500px;
-  transition: 0.7s;
-}
-.bl_work_lv1heading {
-  font-size: 16px;
-  margin-bottom: 2vw;
-  color: #1295b8;
-  border-bottom: solid 1px #cfcfcf;
-  margin-bottom: 1em;
-  padding: 0.2em 0 0.5em 0;
-}
-.bl_work_dt {
-  font-size: 11px;
-  position: relative;
-}
-@media screen and (min-width: 769px) {
-  .bl_work_dt {
-    float: left;
-    font-size: 14px;
-    color: #444;
-    min-width: 100px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .bl_work_dt::after {
-    content: ":";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(100%, -58%);
-    font-size: 20px;
-  }
-}
-.bl_work_dd {
-  color: #444;
-  font-size: 14px;
-  border-bottom: solid 1px #cfcfcf;
-  margin-bottom: 1em;
-  padding: 0.2em 0 0.5em 0;
-  width: 100%;
-}
-@media screen and (min-width: 769px) {
-  .bl_work_dd {
-    padding-left: 8em;
-    padding: 0 0 0.5em 10em;
-  }
-}
-.bl_work_link {
-  color: #777;
-}
-.bl_work_list {
-  list-style: inside;
-}
-.bl_work_item {
-  list-style: inside;
-}
-
-/* unique
-  ========================================================================== */
 .un_animation_ttl {
   -webkit-animation-name: ttl;
   animation-name: ttl;
@@ -547,27 +460,126 @@ body {
   animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes object {
   0% {
     opacity: 0;
+    top: 55%;
   }
   100% {
     opacity: 1;
+    top: 50%;
   }
 }
 
 @keyframes object {
   0% {
     opacity: 0;
+    top: 55%;
   }
   100% {
     opacity: 1;
+    top: 50%;
   }
 }
+.un_skill_list {
+  display: grid;
+}
+.un_work {
+  margin-bottom: 4em;
+}
+.un_work_head {
+  display: flex;
+  flex-direction: column-reverse;
+  cursor: pointer;
+  transition: 0.7s;
+  overflow: hidden;
+}
+.un_work_head:hover {
+  opacity: 0.7;
+  transition: 0.7s;
+}
+.un_work_mv {
+  transition: 0.7s;
+}
+.un_work_mv:hover {
+  transform: scale(1.03);
+  transition: 0.7s;
+}
+.un_work_body {
+  font-size: 14px;
+  margin-top: 6vw;
+  overflow: hidden;
+  max-height: 0px;
+  transition: 0.7s;
+}
+@media screen and (min-width: 769px) {
+  .un_work_body {
+    margin-top: 2vw;
+  }
+}
+.un_work_body.on {
+  max-height: 500px;
+  transition: 0.7s;
+}
+.un_work_lv1heading {
+  font-size: 16px;
+  margin-bottom: 2vw;
+  color: #1295b8;
+  border-bottom: solid 1px #cfcfcf;
+  margin-bottom: 1em;
+  padding: 0.2em 0 0.5em 0;
+}
+.un_work_dt {
+  font-size: 11px;
+  position: relative;
+}
+@media screen and (min-width: 769px) {
+  .un_work_dt {
+    float: left;
+    font-size: 14px;
+    color: #444;
+    min-width: 100px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .un_work_dt::after {
+    content: ":";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(100%, -58%);
+    font-size: 20px;
+  }
+}
+.un_work_dd {
+  color: #444;
+  font-size: 14px;
+  border-bottom: solid 1px #cfcfcf;
+  margin-bottom: 1em;
+  padding: 0.2em 0 0.5em 0;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .un_work_dd {
+    padding-left: 8em;
+    padding: 0 0 0.5em 10em;
+  }
+}
+.un_work_link {
+  color: #777;
+}
+.un_work_list {
+  list-style: inside;
+}
+.un_work_item {
+  list-style: inside;
+}
+
 /* helper
   ========================================================================== */
 .hp_txt-center {

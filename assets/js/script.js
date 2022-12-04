@@ -39,6 +39,6 @@ $('.smooth a').click(function () {
 
 // WORKSのアコーディオン
   $('.js_work_head').on('click', function () {
-      var findBody = $(this).next(".bl_work_body");
+      var findBody = $(this).next(".un_work_body");
       $(findBody).toggleClass('on');
   })
