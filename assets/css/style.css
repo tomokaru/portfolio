@@ -23,8 +23,7 @@ body {
 /* layout
   ========================================================================== */
 .ly_header {
-  padding: 5vw 0 0 0;
-  margin-bottom: 1vw;
+  padding: 8vw 0 0 0;
 }
 @media screen and (min-width: 769px) {
   .ly_header {
@@ -133,7 +132,7 @@ body {
   max-width: 40px;
   cursor: pointer;
   position: fixed;
-  top: 4vw;
+  top: 8vw;
   right: 5%;
   z-index: 998;
 }
