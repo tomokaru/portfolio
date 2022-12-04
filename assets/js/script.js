@@ -36,3 +36,9 @@ $('.smooth a').click(function () {
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
 });
+
+// WORKSのアコーディオン
+  $('.js_work_head').on('click', function () {
+      var findBody = $(this).next(".bl_work_body");
+      $(findBody).toggleClass('on');
+  })
