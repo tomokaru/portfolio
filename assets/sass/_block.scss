@@ -239,5 +239,50 @@
         font-size: 16px;
         margin-bottom: 2vw;
         color: #444;
+        border-bottom: solid 1px #cfcfcf;
+        margin-bottom: 1em;
+        padding: 0.2em 0 0.5em 0;
+    }
+    &_dl {
+
+    }
+    &_dt {
+        font-size: 11px;
+        @include mq-min('md'){
+            position: absolute;
+            font-size: 14px;
+            color: #444;
+            min-width: 100px;
+        }
+    }
+    &_dt::after {
+        content:":";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(100%, -58%);
+        font-size: 20px;
+    }
+    &_dd {
+        color: #444;
+        font-size: 14px;
+        border-bottom: solid 1px #cfcfcf;
+        margin-bottom: 1em;
+        padding: 0.2em 0 0.5em 0;
+        width: 100%;
+        @include mq-min('md'){
+            padding-left: 8em;
+            padding: 0 0 0.5em 10em;
+          }
+    }
+    &_link {
+        color: #1295b8;
+    }
+    &_list {
+        list-style: inside;
+    }
+    &_item {
+        list-style: inside;
     }
 }
