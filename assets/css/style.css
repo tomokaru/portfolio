@@ -369,6 +369,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   cursor: pointer;
+  transition: 0.7s;
 }
 .bl_work_head:hover {
   opacity: 0.7;
