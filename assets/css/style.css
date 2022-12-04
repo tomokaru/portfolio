@@ -256,6 +256,7 @@ body {
   font-size: 7.2vw;
   letter-spacing: 0.3em;
   color: #444;
+  opacity: 0;
 }
 @media screen and (min-width: 769px) {
   .bl_kv_ttl {
@@ -263,6 +264,7 @@ body {
   }
 }
 .bl_kv_txt {
+  opacity: 0;
   letter-spacing: 0.3em;
   color: #444;
 }
@@ -370,9 +372,17 @@ body {
   flex-direction: column-reverse;
   cursor: pointer;
   transition: 0.7s;
+  overflow: hidden;
 }
 .bl_work_head:hover {
   opacity: 0.7;
+  transition: 0.7s;
+}
+.bl_work_mv {
+  transition: 0.7s;
+}
+.bl_work_mv:hover {
+  transform: scale(1.03);
   transition: 0.7s;
 }
 .bl_work_body {
@@ -448,6 +458,104 @@ body {
 
 /* unique
   ========================================================================== */
+.un_animation_ttl {
+  -webkit-animation-name: ttl;
+  animation-name: ttl;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes ttl {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ttl {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.un_animation_txt {
+  -webkit-animation-name: txt;
+  animation-name: txt;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+
+@-webkit-keyframes txt {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes txt {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.un_animation_object {
+  -webkit-animation-name: object;
+  animation-name: object;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes object {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes object {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* helper
   ========================================================================== */
 .hp_txt-center {

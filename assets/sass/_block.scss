@@ -146,13 +146,13 @@
         font-size: 7.2vw;
         letter-spacing: 0.3em;
         color: #444;
-        // opacity: 0;
+        opacity: 0;
         @include mq-min('md'){
             font-size: 56px;
         }
     }
     &_txt {
-        // opacity: 0;
+        opacity: 0;
         letter-spacing: 0.3em;
         color: #444;
     }
@@ -213,13 +213,21 @@
 }
   
 @keyframes right-rotate {
-0%   { transform: translate(-50%,-50%) rotate(0deg); }
-100% { transform: translate(-50%,-50%) rotate(360deg); }
-}
+    0%   { 
+        transform: translate(-50%,-50%) rotate(0deg); 
+    }
+    100% { 
+        transform: translate(-50%,-50%) rotate(360deg); 
+    }
+    }
 
-@keyframes left-rotate {
-0%   { transform: translate(-50%,-50%) rotate(360deg); }
-100% { transform: translate(-50%,-50%) rotate(0deg); }
+    @keyframes left-rotate {
+    0%   { 
+        transform: translate(-50%,-50%) rotate(360deg); 
+    }
+    100% { 
+        transform: translate(-50%,-50%) rotate(0deg); 
+    }
 }
 
 .bl_work {
@@ -229,13 +237,18 @@
         flex-direction: column-reverse;
         cursor: pointer;
         transition: 0.7s;
+        overflow: hidden;
         &:hover {
             opacity: 0.7;
             transition: 0.7s;
         }
     }
     &_mv {
-        
+        transition: 0.7s;
+    }
+    &_mv:hover {
+        transform: scale(1.03);  
+        transition: 0.7s;
     }
     &_body {
         font-size: 14px;

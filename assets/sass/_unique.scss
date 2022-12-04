@@ -2,3 +2,56 @@
 
 /* unique
   ========================================================================== */
+
+.un_animation_ttl {
+  animation-name: ttl;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 3s;
+}
+@keyframes ttl {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.un_animation_txt {
+  animation-name: txt;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 3.2s;
+}
+@keyframes txt {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.un_animation_object {
+  animation-name: object;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+@keyframes object {
+    0% {
+        opacity: 0;
+        // transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        // transform: translateY(0);
+    }
+}
