@@ -61,7 +61,10 @@
     &_inner {
       width: 92%;
       margin: 0 auto;
-      padding: 6em 0 1em 0;
+      padding: 4em 0 1em 0;
       border-top: solid 1px #cfcfcf;
+      @include mq-min('md'){
+        padding: 6em 0 1em 0;
+      }
   }
 }
