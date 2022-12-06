@@ -102,8 +102,7 @@
 
 .un_skill {
   &_list {
-    display: grid;
-    
+
   }
   &_item {
 
@@ -111,8 +110,22 @@
   &_img {
 
   }
+  &_ttl::before {
+    content:"";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #1295b8;
+    margin-right: 0.4em;
+  }
   &_ttl {
-
+    font-size: 16px;
+    border-bottom: solid 1px #cfcfcf;
+    padding-bottom: 0.1em;
+    margin-bottom: 0.4em;
+    display: flex;
+    align-items: center;
   }
   &_txt {
 
