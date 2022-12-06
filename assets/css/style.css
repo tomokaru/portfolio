@@ -45,8 +45,6 @@ body {
 
 .ly_wrapper {
   transition: 0.7s;
-  position: relative;
-  z-index: -1;
 }
 .ly_wrapper.on {
   transition: 0.7s;

@@ -21,8 +21,6 @@
 
 .ly_wrapper {
   transition: 0.7s;
-  position: relative;
-  z-index: -1;
   &.on {
     transition: 0.7s;
     filter: blur(4px);
