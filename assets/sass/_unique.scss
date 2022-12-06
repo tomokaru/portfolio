@@ -105,7 +105,10 @@
 
   }
   &_item {
-
+    margin-bottom: 1.5em;
+  }
+  &_item:last-of-type {
+    margin-bottom: 0;
   }
   &_img {
 
@@ -121,10 +124,8 @@
   }
   &_ttl {
     font-size: 16px;
-    border-bottom: solid 1px #cfcfcf;
-    padding-bottom: 0.1em;
-    margin-bottom: 0.4em;
-    display: flex;
+    padding: 0 0.5em 0.1em 0;
+    display: inline-flex;
     align-items: center;
   }
   &_txt {
