@@ -59,6 +59,7 @@
     cursor: pointer;
     position: fixed;
     right: 5%;
+    z-index: 999;
     @include mq-min('lg'){
         display: none;
     }

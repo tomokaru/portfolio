@@ -169,6 +169,7 @@ body {
   cursor: pointer;
   position: fixed;
   right: 5%;
+  z-index: 999;
 }
 @media screen and (min-width: 1025px) {
   .bl_hamburger {
