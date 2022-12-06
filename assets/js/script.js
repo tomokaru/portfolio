@@ -42,3 +42,23 @@ $('.smooth a').click(function () {
       var findBody = $(this).next(".un_work_body");
       $(findBody).toggleClass('on');
   })
+
+//スクロール発火処理
+function scrollEffect(){
+  $(".js_scrl-target").each(function(){
+    var scroll = $(window).scrollTop();//現在のyスクロール量を取得
+    var windowHeight = $(window).height();//ウィンドウの高さを取得
+    var tgtPos = $(this).offset().top//ターゲットのy位置を取得
+    var subjectHeight = $(this).innerHeight();//ターゲットの高さを取得
+    var threshould;//閾値
+    var w = $(window).width();
+    threshould = tgtPos - windowHeight + 200;//発火位置調整
+    //
+    if (scroll > threshould) {//クラスを付与する処理
+      $(this).addClass("js_scrl-target-fire");
+    }
+  });
+}
+$(window).scroll(function(){
+  scrollEffect();
+});

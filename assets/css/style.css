@@ -107,6 +107,7 @@ body {
   margin-bottom: 3vw;
   letter-spacing: 0.05em;
   color: #1295b8;
+  opacity: 0;
 }
 @media screen and (min-width: 769px) {
   .bl_lv2-heading {
@@ -127,6 +128,10 @@ body {
   .bl_lv3-heading {
     font-size: 24px;
   }
+}
+
+.bl_content {
+  opacity: 0;
 }
 
 .bl_txt {
@@ -643,8 +648,8 @@ body {
   animation-fill-mode: forwards;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-delay: 3.4s;
-  animation-delay: 3.4s;
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
 }
 
 @-webkit-keyframes header {
@@ -772,5 +777,35 @@ body {
   100% {
     opacity: 1;
     top: 50%;
+  }
+}
+.js_scrl-target-fire {
+  -webkit-animation-name: scrl-target-fire;
+  animation-name: scrl-target-fire;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes scrl-target-fire {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrl-target-fire {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
