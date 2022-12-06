@@ -5,6 +5,8 @@
 .ly_header {
   padding: 8vw 0 0 0;
   opacity: 0;
+  position: relative;
+  z-index: 999;
   @include mq-min('md'){
     padding: 3vw 0 0 0;
   }

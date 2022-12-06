@@ -25,6 +25,8 @@ body {
 .ly_header {
   padding: 8vw 0 0 0;
   opacity: 0;
+  position: relative;
+  z-index: 999;
 }
 @media screen and (min-width: 769px) {
   .ly_header {
@@ -167,7 +169,6 @@ body {
   cursor: pointer;
   position: fixed;
   right: 5%;
-  z-index: 998;
 }
 @media screen and (min-width: 1025px) {
   .bl_hamburger {
