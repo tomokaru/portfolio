@@ -28,30 +28,30 @@ setInterval(() => {
 // スムーススクロール
 const header = $('.ly_header');
 $('.smooth a').click(function () {
-    var gap = header.outerHeight();
-    var speed = 600;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top - gap;
+    let gap = header.outerHeight();
+    let speed = 600;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top - gap;
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
 });
 
 // WORKSのアコーディオン
   $('.js_work_head').on('click', function () {
-      var findBody = $(this).next(".un_work_body");
+      let findBody = $(this).next(".un_work_body");
       $(findBody).toggleClass('on');
   })
 
 //スクロール発火処理
 function scrollEffect(){
   $(".js_scrl-target").each(function(){
-    var scroll = $(window).scrollTop();//現在のyスクロール量を取得
-    var windowHeight = $(window).height();//ウィンドウの高さを取得
-    var tgtPos = $(this).offset().top//ターゲットのy位置を取得
-    var subjectHeight = $(this).innerHeight();//ターゲットの高さを取得
-    var threshould;//閾値
-    var w = $(window).width();
+    let scroll = $(window).scrollTop();//現在のyスクロール量を取得
+    let windowHeight = $(window).height();//ウィンドウの高さを取得
+    let tgtPos = $(this).offset().top//ターゲットのy位置を取得
+    let subjectHeight = $(this).innerHeight();//ターゲットの高さを取得
+    let threshould;//閾値
+    let w = $(window).width();
     threshould = tgtPos - windowHeight + 200;//発火位置調整
     //
     if (scroll > threshould) {//クラスを付与する処理
