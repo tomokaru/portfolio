@@ -2,7 +2,7 @@
 $('.js_hamburger').on('click', function () {
   $('.js_header-nav').toggleClass('on');
   $('.js_hamburger-btn_line').toggleClass('on');
-  $('.ly_wrapper').toggleClass('on');
+  $('.ly_main').toggleClass('on');
 })
 $('.js_header-nav a[href]').on('click', function(event) {
   $('.js_hamburger').trigger('click');
