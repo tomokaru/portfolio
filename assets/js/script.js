@@ -1,12 +1,22 @@
 // ハンバーガーメニュー
-$('.js_hamburger').on('click', function () {
-  $('.js_header-nav').toggleClass('on');
-  $('.js_hamburger-btn_line').toggleClass('on');
-  $('.ly_main').toggleClass('on');
+let hamburger = $('.js_hamburger');
+let nav = $('.js_header-nav');
+let btn_line = $('.js_hamburger-btn_line');
+let main = $('.ly_main');
+
+hamburger.on('click', function() {
+  nav.toggleClass('on');
+  btn_line.toggleClass('on');
+  main.toggleClass('on');
 })
-$('.js_header-nav a[href]').on('click', function(event) {
-  $('.js_hamburger').trigger('click');
+$('.js_header-nav a[href]').on('click', function() {
+  hamburger.trigger('click');
 });
+main.on('click', function() {
+  if(nav.hasClass('on')){
+    hamburger.trigger('click');
+  }
+})
 
 //ページ遷移時のローディング
 $(window).on('load',function(){
@@ -14,9 +24,9 @@ $(window).on('load',function(){
 });
 
 //ページ遷移時のロゴアニメーション
-const classname = "-visible";
-const timeout = 2000;
-const $target = $(".splash-logo");
+let classname = "-visible";
+let timeout = 2000;
+let $target = $(".splash-logo");
 
 setInterval(() => {
   $target.addClass(classname);
@@ -26,7 +36,7 @@ setInterval(() => {
 }, timeout * 0.00001);
 
 // スムーススクロール
-const header = $('.ly_header');
+let header = $('.ly_header');
 $('.smooth a').click(function () {
     let gap = header.outerHeight();
     let speed = 600;
