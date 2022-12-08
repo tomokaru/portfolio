@@ -20,8 +20,7 @@
     }
   }
 }
-
-.ly_wrapper {
+.ly_main {
   transition: 0.7s;
   &.on {
     transition: 0.7s;
@@ -30,9 +29,6 @@
       filter: none;
     }
   }
-}
-.ly_main {
-
 }
 .ly_section {
   margin: 0 auto 80px auto;

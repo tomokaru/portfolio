@@ -45,15 +45,15 @@ body {
   }
 }
 
-.ly_wrapper {
+.ly_main {
   transition: 0.7s;
 }
-.ly_wrapper.on {
+.ly_main.on {
   transition: 0.7s;
   filter: blur(4px);
 }
 @media screen and (min-width: 1025px) {
-  .ly_wrapper.on {
+  .ly_main.on {
     filter: none;
   }
 }
