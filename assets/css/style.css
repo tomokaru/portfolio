@@ -185,7 +185,7 @@ body {
   }
 }
 .bl_header-nav_lv2heading {
-  font-size: 0px;
+  display: none;
 }
 .bl_header-nav_list {
   position: absolute;
