@@ -73,6 +73,9 @@
     @include mq-min('lg'){
         height: auto;
     }
+    &_lv2heading {
+        font-size: 0px;
+    }
     &_list {
         position: absolute;
         top: 50%;
