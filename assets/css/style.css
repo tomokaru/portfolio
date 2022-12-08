@@ -606,6 +606,11 @@ body {
   line-height: 1;
 }
 
+.splash-logo .border-none {
+  border: none;
+  padding: 0.25em 0 0.1em 0;
+}
+
 .splash-logo.-visible span {
   transform: translate(0, 0);
 }
