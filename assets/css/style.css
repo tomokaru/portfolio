@@ -394,11 +394,20 @@ body {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
-.un_skill_item {
+.un_skill {
   margin-bottom: 1.5em;
 }
-.un_skill_item:last-of-type {
-  margin-bottom: 0;
+.un_skill_head {
+  display: flex;
+  align-items: end;
+  margin-bottom: 0.5em;
+}
+.un_skill_img-wrapper {
+  display: flex;
+  margin-bottom: -0.1em;
+}
+.un_skill_img {
+  max-width: 56px;
 }
 .un_skill_ttl::before {
   content: "";
@@ -415,6 +424,10 @@ body {
   display: inline-flex;
   align-items: center;
 }
+.un_skill:last-of-type {
+  margin-bottom: 0;
+}
+
 .un_work {
   margin-bottom: 4em;
 }

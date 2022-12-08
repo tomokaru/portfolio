@@ -101,17 +101,18 @@
 }
 
 .un_skill {
-  &_list {
-
+  margin-bottom: 1.5em;
+  &_head {
+    display: flex;
+    align-items: end;
+    margin-bottom: 0.5em;
   }
-  &_item {
-    margin-bottom: 1.5em;
-  }
-  &_item:last-of-type {
-    margin-bottom: 0;
+  &_img-wrapper {
+    display: flex;
+    margin-bottom: -0.1em;
   }
   &_img {
-
+    max-width: 56px;
   }
   &_ttl::before {
     content:"";
@@ -131,6 +132,9 @@
   &_txt {
 
   }
+}
+.un_skill:last-of-type {
+  margin-bottom: 0;
 }
 
 .un_work {
