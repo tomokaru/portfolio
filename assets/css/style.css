@@ -534,7 +534,7 @@ body {
     position: static;
     background-color: unset;
     transform: translate(0, 0);
-    width: 100% S;
+    width: auto;
   }
 }
 .js_header-nav.on {
