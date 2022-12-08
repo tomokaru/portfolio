@@ -147,6 +147,7 @@ body {
 
 .bl_link {
   color: #777;
+  text-decoration: underline;
 }
 
 .bl_header-utils {
