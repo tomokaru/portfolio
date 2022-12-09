@@ -130,10 +130,10 @@
 }
 @keyframes header {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
 }
 
@@ -146,14 +146,14 @@
 }
 @keyframes ttl {
     0% {
-        opacity: 0;
-        transform: translateY(30%);
+      opacity: 0;
+      transform: translateY(30%);
     }
     90% {
       transform: translateY(0);
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
 }
 
@@ -166,14 +166,14 @@
 }
 @keyframes txt {
     0% {
-        opacity: 0;
-        transform: translateY(30%);
+      opacity: 0;
+      transform: translateY(30%);
     }
     90% {
       transform: translateY(0);
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
 }
 .animation_object {
@@ -185,12 +185,12 @@
 }
 @keyframes object {
     0% {
-        opacity: 0;
-        top: 55%;
+      opacity: 0;
+      top: 55%;
     }
     100% {
-        opacity: 1;
-        top: 50%;
+      opacity: 1;
+      top: 50%;
     }
 }
 
@@ -203,9 +203,9 @@
 }
 @keyframes scrl-target-fire {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
 }

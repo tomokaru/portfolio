@@ -64,20 +64,19 @@
         border-radius: 0.6em;
         margin: 2px;
         border: solid 1px #cfcfcf;
-        // background-color: #f9f9f9;
         pointer-events: none;
         @include mq-min('lg'){
           pointer-events: inherit;
+        }
+        &:hover .bl_object_box-txt {
+          opacity: 1;
+          transition: 1s;
         }
     }
     &_box-txt {
     animation: left-rotate_txt 100s linear infinite;
     animation-delay: -6s;
     opacity: 0;
-    transition: 1s;
-    }
-    &_box:hover .bl_object_box-txt {
-    opacity: 1;
     transition: 1s;
     }
 }
@@ -114,20 +113,20 @@
   &_img {
     max-width: 56px;
   }
-  &_ttl::before {
-    content:"";
-    display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 100%;
-    background-color: #1295b8;
-    margin-right: 0.4em;
-  }
   &_ttl {
     font-size: 16px;
     padding: 0 0.5em 0.1em 0;
     display: inline-flex;
     align-items: center;
+    &::before {
+      content:"";
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      background-color: #1295b8;
+      margin-right: 0.4em;
+    }
   }
   &_txt {
 
@@ -139,23 +138,35 @@
 
 .un_work {
   margin-bottom: 4em;
+  position: relative;
+  &::after {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: #cfcfcf;
+    position: absolute;
+    left: 50%;
+    bottom: -1em;
+    transform: translate(-50%,0);
+  }
   &_head {
-      display: flex;
-      flex-direction: column-reverse;
-      cursor: pointer;
-      transition: 0.7s;
-      overflow: hidden;
-      &:hover {
-          opacity: 0.7;
-          transition: 0.7s;
-      }
+    display: flex;
+    flex-direction: column-reverse;
+    cursor: pointer;
+    transition: 0.7s;
+    overflow: hidden;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.7s;
+    }
   }
   &_mv {
       transition: 0.7s;
-  }
-  &_mv:hover {
-      transform: scale(1.03);  
-      transition: 0.7s;
+      &:hover {
+        transform: scale(1.03);  
+        transition: 0.7s;
+      }
   }
   &_body {
       font-size: 14px;
@@ -191,9 +202,8 @@
           color: #444;
           min-width: 100px;
       }
-  }
-  &_dt::after {
-      @include mq-min('md'){
+      &::after {
+        @include mq-min('md'){
           content:":";
           display: block;
           position: absolute;
@@ -201,6 +211,7 @@
           left: 100%;
           transform: translate(100%, -58%);
           font-size: 20px;
+        }
       }
   }
   &_dd {

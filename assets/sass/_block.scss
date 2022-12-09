@@ -2,10 +2,9 @@
 /* block
     ========================================================================== */
 .bl_section-heading {
-    // text-align: center;
+
 }
 .bl_lv1-heading {
-    // font-size: 0px;
     letter-spacing: 0.3em;
     color: #444;
 }
@@ -118,7 +117,6 @@
         display: block;
         border: solid 1px #cfcfcf;
         padding: 0.3em 0.7em 0.2em 0.7em;
-        // background-color: #ffffff50;
         color: #fff;
         @include mq-min('md'){
             font-size: 16px;

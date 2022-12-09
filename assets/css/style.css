@@ -348,16 +348,16 @@ body {
     pointer-events: inherit;
   }
 }
+.un_object_box:hover .bl_object_box-txt {
+  opacity: 1;
+  transition: 1s;
+}
 .un_object_box-txt {
   -webkit-animation: left-rotate_txt 100s linear infinite;
   animation: left-rotate_txt 100s linear infinite;
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
   opacity: 0;
-  transition: 1s;
-}
-.un_object_box:hover .bl_object_box-txt {
-  opacity: 1;
   transition: 1s;
 }
 
@@ -409,6 +409,12 @@ body {
 .un_skill_img {
   max-width: 56px;
 }
+.un_skill_ttl {
+  font-size: 16px;
+  padding: 0 0.5em 0.1em 0;
+  display: inline-flex;
+  align-items: center;
+}
 .un_skill_ttl::before {
   content: "";
   display: block;
@@ -418,18 +424,24 @@ body {
   background-color: #1295b8;
   margin-right: 0.4em;
 }
-.un_skill_ttl {
-  font-size: 16px;
-  padding: 0 0.5em 0.1em 0;
-  display: inline-flex;
-  align-items: center;
-}
 .un_skill:last-of-type {
   margin-bottom: 0;
 }
 
 .un_work {
   margin-bottom: 4em;
+  position: relative;
+}
+.un_work::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: #cfcfcf;
+  position: absolute;
+  left: 50%;
+  bottom: -1em;
+  transform: translate(-50%, 0);
 }
 .un_work_head {
   display: flex;
