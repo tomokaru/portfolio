@@ -13,82 +13,82 @@
         height: 80vh;
     }
     &_ttl {
-        font-size: 7.2vw;
-        letter-spacing: 0.3em;
-        color: #444;
-        opacity: 0;
-        @include mq-min('md'){
-            font-size: 56px;
-        }
+      font-size: 7.2vw;
+      letter-spacing: 0.3em;
+      color: #444;
+      opacity: 0;
+      @include mq-min('md'){
+          font-size: 56px;
+      }
     }
     &_txt {
-        opacity: 0;
-        letter-spacing: 0.3em;
-        color: #444;
+      opacity: 0;
+      letter-spacing: 0.3em;
+      color: #444;
     }
 }
 .un_object {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -999;
-    opacity: 0;
-    &_group {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        min-width: 208px;
-        position: absolute;
-        &--01 {
-          animation: right-rotate 97s linear infinite -6s;
-          z-index: 3;
-        }
-        &--02 {
-          animation: left-rotate 100s linear infinite;
-          z-index: 2;
-        }
-        &--03 {
-          animation: right-rotate 94s linear infinite 2s;
-          z-index: 1;
-        }
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -999;
+  opacity: 0;
+  &_group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      min-width: 208px;
+      position: absolute;
+      &--01 {
+        animation: right-rotate 97s linear infinite -6s;
+        z-index: 3;
+      }
+      &--02 {
+        animation: left-rotate 100s linear infinite;
+        z-index: 2;
+      }
+      &--03 {
+        animation: right-rotate 94s linear infinite 2s;
+        z-index: 1;
+      }
+  }
     &_box {
-        min-width: 100px;
-        width: 10vw;
-        min-height: 100px;
-        height: 10vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0.6em;
-        margin: 2px;
-        border: solid 1px #cfcfcf;
-        pointer-events: none;
-        @include mq-min('lg'){
-          pointer-events: inherit;
-        }
-        &:hover .bl_object_box-txt {
-          opacity: 1;
-          transition: 1s;
-        }
-    }
+      min-width: 100px;
+      width: 10vw;
+      min-height: 100px;
+      height: 10vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.6em;
+      margin: 2px;
+      border: solid 1px #cfcfcf;
+      pointer-events: none;
+      @include mq-min('lg'){
+        pointer-events: inherit;
+      }
+      &:hover .bl_object_box-txt {
+        opacity: 1;
+        transition: 1s;
+      }
+  }
 }
   
 @keyframes right-rotate {
-    0%   { 
-        transform: translate(-50%,-50%) rotate(0deg); 
-    }
-    100% { 
-        transform: translate(-50%,-50%) rotate(360deg); 
-    }
-    }
+  0% { 
+    transform: translate(-50%,-50%) rotate(0deg); 
+  }
+  100% { 
+    transform: translate(-50%,-50%) rotate(360deg); 
+  }
+  }
 
-    @keyframes left-rotate {
-    0%   { 
-        transform: translate(-50%,-50%) rotate(360deg); 
-    }
-    100% { 
-        transform: translate(-50%,-50%) rotate(0deg); 
-    }
+  @keyframes left-rotate {
+  0% { 
+    transform: translate(-50%,-50%) rotate(360deg); 
+  }
+  100% { 
+    transform: translate(-50%,-50%) rotate(0deg); 
+  }
 }
 
 .un_skill {
@@ -130,31 +130,6 @@
 
 .un_work {
   margin-bottom: 4em;
-  position: relative;
-  &::after {
-    content:"";
-    display: block;
-    height: 1px;
-    background-color: #cfcfcf;
-    position: absolute;
-    left: 50%;
-    bottom: 0em;
-    transform: translate(-50%,0);
-    animation: line 2.5s ease-in-out infinite;
-  }
-  @keyframes line {
-    0%{
-      width: 0;
-      opacity: 0;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      width: 100%;
-      opacity: 0;
-    }
-  }
   &_head {
     display: flex;
     flex-direction: column-reverse;
@@ -167,77 +142,77 @@
     }
   }
   &_mv {
+    transition: 0.7s;
+    &:hover {
+      transform: scale(1.03);  
       transition: 0.7s;
-      &:hover {
-        transform: scale(1.03);  
-        transition: 0.7s;
-      }
+    }
   }
   &_body {
-      font-size: 14px;
-      margin-top: 6vw;
-      overflow: hidden;
-      max-height: 0px;
+    font-size: 14px;
+    margin-top: 6vw;
+    overflow: hidden;
+    max-height: 0px;
+    transition: 0.7s;
+    @include mq-min('md'){
+      margin-top: 2vw;
+    }
+    &.on {
+      max-height: 500px;
       transition: 0.7s;
-      @include mq-min('md'){
-          margin-top: 2vw;
-      }
-      &.on {
-          max-height: 500px;
-          transition: 0.7s;
-      }
+    }
   }
   &_ttl {
-      font-size: 16px;
-      margin-bottom: 2vw;
-      color: #1295b8;
-      border-bottom: solid 1px #cfcfcf;
-      margin-bottom: 1em;
-      padding: 0.2em 0 0.5em 0;
+    font-size: 16px;
+    margin-bottom: 2vw;
+    color: #1295b8;
+    border-bottom: solid 1px #cfcfcf;
+    margin-bottom: 1em;
+    padding: 0.2em 0 0.5em 0;
   }
   &_dl {
 
   }
   &_dt {
-      font-size: 11px;
-      position: relative;
+    font-size: 11px;
+    position: relative;
+    @include mq-min('md'){
+      float: left;
+      font-size: 14px;
+      color: #444;
+      min-width: 100px;
+    }
+    &::after {
       @include mq-min('md'){
-          float: left;
-          font-size: 14px;
-          color: #444;
-          min-width: 100px;
+        content:":";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(100%, -58%);
+        font-size: 20px;
       }
-      &::after {
-        @include mq-min('md'){
-          content:":";
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 100%;
-          transform: translate(100%, -58%);
-          font-size: 20px;
-        }
-      }
+    }
   }
   &_dd {
-      color: #444;
-      font-size: 14px;
-      border-bottom: solid 1px #cfcfcf;
-      margin-bottom: 1em;
-      padding: 0.2em 0 0.5em 0;
-      width: 100%;
-      @include mq-min('md'){
-          padding-left: 8em;
-          padding: 0 0 0.5em 10em;
-        }
+    color: #444;
+    font-size: 14px;
+    border-bottom: solid 1px #cfcfcf;
+    margin-bottom: 1em;
+    padding: 0.2em 0 0.5em 0;
+    width: 100%;
+    @include mq-min('md'){
+      padding-left: 8em;
+      padding: 0 0 0.5em 10em;
+    }
   }
   &_link {
-      color: #777;
+    color: #777;
   }
   &_list {
-      list-style: inside;
+    list-style: inside;
   }
   &_item {
-      list-style: inside;
+    list-style: inside;
   }
 }

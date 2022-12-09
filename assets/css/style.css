@@ -418,45 +418,6 @@ body {
 
 .un_work {
   margin-bottom: 4em;
-  position: relative;
-}
-.un_work::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #cfcfcf;
-  position: absolute;
-  left: 50%;
-  bottom: 0em;
-  transform: translate(-50%, 0);
-  -webkit-animation: line 2.5s ease-in-out infinite;
-  animation: line 2.5s ease-in-out infinite;
-}
-@-webkit-keyframes line {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    width: 100%;
-    opacity: 0;
-  }
-}
-@keyframes line {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    width: 100%;
-    opacity: 0;
-  }
 }
 .un_work_head {
   display: flex;
@@ -565,6 +526,15 @@ body {
   width: 50%;
   z-index: 997;
 }
+.js_header-nav.on {
+  left: 50%;
+  transition: 0.7s;
+}
+@media screen and (min-width: 769px) {
+  .js_header-nav.on {
+    left: 70%;
+  }
+}
 @media screen and (min-width: 769px) {
   .js_header-nav {
     width: 30%;
@@ -578,15 +548,6 @@ body {
     width: auto;
   }
 }
-.js_header-nav.on {
-  left: 50%;
-  transition: 0.7s;
-}
-@media screen and (min-width: 769px) {
-  .js_header-nav.on {
-    left: 70%;
-  }
-}
 
 .js_hamburger-btn_line {
   display: block;
@@ -596,16 +557,16 @@ body {
   margin-bottom: 4px;
   transition: 0.4s;
 }
+.js_hamburger-btn_line.on {
+  transform: translateX(0) translateY(3px) rotate(45deg);
+  transition: 0.4s;
+  background-color: #fff;
+}
 @media screen and (min-width: 1025px) {
   .js_hamburger-btn_line {
     width: 20px;
     height: 1px;
   }
-}
-.js_hamburger-btn_line.on {
-  transform: translateX(0) translateY(3px) rotate(45deg);
-  transition: 0.4s;
-  background-color: #fff;
 }
 
 .js_hamburger-btn_line:last-of-type {

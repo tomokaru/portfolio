@@ -11,6 +11,13 @@
   background-color: #44444490;
   width: 50%;
   z-index: 997;
+  &.on {
+    left: 50%;
+    transition: 0.7s;
+    @include mq-min('md'){
+      left: 70%;
+    }
+  }
   @include mq-min('md'){
     width: 30%;
   }
@@ -20,13 +27,6 @@
     transform: translate(0, 0);
     width: auto;
   }
-  &.on {
-    left: 50%;
-    transition: 0.7s;
-    @include mq-min('md'){
-      left: 70%;
-    }
-  }
 }
 .js_hamburger-btn_line {
   display: block;
@@ -35,14 +35,14 @@
   background-color: #444;
   margin-bottom: 4px;
   transition: 0.4s;
-    @include mq-min('lg'){
-      width: 20px;
-      height: 1px;
-    }
   &.on {
     transform: translateX(0) translateY(3px) rotate(45deg);
     transition: 0.4s;
     background-color: #fff;
+  }
+  @include mq-min('lg'){
+    width: 20px;
+    height: 1px;
   }
 }
 .js_hamburger-btn_line:last-of-type {
@@ -125,67 +125,67 @@
   animation: header 1.5s ease-in-out forwards 3.2s;
 }
 @keyframes header {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .animation_ttl {
   animation: ttl 1.2s ease-in-out forwards 2.8s;
 }
 @keyframes ttl {
-    0% {
-      opacity: 0;
-      transform: translateY(30%);
-    }
-    90% {
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .animation_txt {
   animation: txt 1s ease-in-out forwards 3s;
 }
 @keyframes txt {
-    0% {
-      opacity: 0;
-      transform: translateY(30%);
-    }
-    90% {
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .animation_object {
   animation: object 2s ease-in-out forwards 1s;
 }
 @keyframes object {
-    0% {
-      opacity: 0;
-      top: 55%;
-    }
-    100% {
-      opacity: 1;
-      top: 50%;
-    }
+  0% {
+    opacity: 0;
+    top: 55%;
+  }
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
 }
 
 .js_scrl-target-fire {
   animation: scrl-target-fire 1.4s ease-in-out forwards 0s;
 }
 @keyframes scrl-target-fire {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
