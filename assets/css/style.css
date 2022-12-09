@@ -312,18 +312,42 @@ body {
   position: absolute;
 }
 .un_object_group--01 {
-  -webkit-animation: right-rotate 97s linear infinite -6s;
-  animation: right-rotate 97s linear infinite -6s;
+  -webkit-animation-name: right-rotate;
+  animation-name: right-rotate;
+  -webkit-animation-duration: 100s;
+  animation-duration: 100s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: infinite;
+  animation-fill-mode: infinite;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
   z-index: 3;
 }
 .un_object_group--02 {
-  -webkit-animation: left-rotate 100s linear infinite;
-  animation: left-rotate 100s linear infinite;
+  -webkit-animation-name: left-rotate;
+  animation-name: left-rotate;
+  -webkit-animation-duration: 100s;
+  animation-duration: 100s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: infinite;
+  animation-fill-mode: infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
   z-index: 2;
 }
 .un_object_group--03 {
-  -webkit-animation: right-rotate 94s linear infinite 2s;
-  animation: right-rotate 94s linear infinite 2s;
+  -webkit-animation-name: right-rotate;
+  animation-name: right-rotate;
+  -webkit-animation-duration: 100s;
+  animation-duration: 100s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: infinite;
+  animation-fill-mode: infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   z-index: 1;
 }
 .un_object_box {
@@ -657,8 +681,16 @@ body {
 }
 
 .animation_header {
-  -webkit-animation: header 1.5s ease-in-out forwards 3.2s;
-  animation: header 1.5s ease-in-out forwards 3.2s;
+  -webkit-animation-name: header;
+  animation-name: header;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
 }
 
 @-webkit-keyframes header {
@@ -679,8 +711,16 @@ body {
   }
 }
 .animation_ttl {
-  -webkit-animation: ttl 1.2s ease-in-out forwards 2.8s;
-  animation: ttl 1.2s ease-in-out forwards 2.8s;
+  -webkit-animation-name: ttl;
+  animation-name: ttl;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
 }
 
 @-webkit-keyframes ttl {
@@ -709,8 +749,16 @@ body {
   }
 }
 .animation_txt {
-  -webkit-animation: txt 1s ease-in-out forwards 3s;
-  animation: txt 1s ease-in-out forwards 3s;
+  -webkit-animation-name: txt;
+  animation-name: txt;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 @-webkit-keyframes txt {
@@ -739,8 +787,16 @@ body {
   }
 }
 .animation_object {
-  -webkit-animation: object 2s ease-in-out forwards 1s;
-  animation: object 2s ease-in-out forwards 1s;
+  -webkit-animation-name: object;
+  animation-name: object;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes object {
@@ -765,8 +821,16 @@ body {
   }
 }
 .js_scrl-target-fire {
-  -webkit-animation: scrl-target-fire 1.4s ease-in-out forwards 0s;
-  animation: scrl-target-fire 1.4s ease-in-out forwards 0s;
+  -webkit-animation-name: scrl-target-fire;
+  animation-name: scrl-target-fire;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 @-webkit-keyframes scrl-target-fire {

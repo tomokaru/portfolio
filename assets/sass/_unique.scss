@@ -39,15 +39,30 @@
       min-width: 208px;
       position: absolute;
       &--01 {
-        animation: right-rotate 97s linear infinite -6s;
+        // animation: right-rotate 97s linear infinite -6s;
+        animation-name: right-rotate;
+        animation-duration: 100s;
+        animation-timing-function: linear;
+        animation-fill-mode: infinite;
+        animation-delay: -6s;
         z-index: 3;
       }
       &--02 {
-        animation: left-rotate 100s linear infinite;
+        // animation: left-rotate 100s linear infinite;
+        animation-name: left-rotate;
+        animation-duration: 100s;
+        animation-timing-function: linear;
+        animation-fill-mode: infinite;
+        animation-delay: 0s;
         z-index: 2;
       }
       &--03 {
-        animation: right-rotate 94s linear infinite 2s;
+        // animation: right-rotate 94s linear infinite 2s;
+        animation-name: right-rotate;
+        animation-duration: 100s;
+        animation-timing-function: linear;
+        animation-fill-mode: infinite;
+        animation-delay: 2s;
         z-index: 1;
       }
   }
