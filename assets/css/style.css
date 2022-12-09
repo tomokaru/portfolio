@@ -318,8 +318,8 @@ body {
   animation-duration: 100s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-fill-mode: infinite;
-  animation-fill-mode: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
   z-index: 3;
@@ -331,8 +331,8 @@ body {
   animation-duration: 100s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-fill-mode: infinite;
-  animation-fill-mode: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   z-index: 2;
@@ -344,8 +344,8 @@ body {
   animation-duration: 100s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-fill-mode: infinite;
-  animation-fill-mode: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   z-index: 1;
