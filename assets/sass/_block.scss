@@ -61,7 +61,7 @@
     right: 5%;
     z-index: 999;
     @include mq-min('lg'){
-        display: none;
+        // display: none;
     }
     .bl_hamburger-btn {
 
@@ -71,7 +71,7 @@
 .bl_header-nav {
     height: 100vh;
     @include mq-min('lg'){
-        height: auto;
+        // height: auto;
     }
     &_lv2heading {
         display: none;
@@ -82,15 +82,15 @@
         left: 50%;
         transform: translate(-50%, -50%);
         @include mq-min('lg'){
-            display: flex;
-            justify-content: end;
-            position: static;
-            transform: translate(0,0);
+            // display: flex;
+            // justify-content: end;
+            // position: static;
+            // transform: translate(0,0);
         }
     }
     &_item:first-of-type {
         @include mq-min('lg'){
-            display: none;
+            // display: none;
         }
     }
     &_item {
@@ -100,14 +100,14 @@
             margin-bottom: 40px;
         }
         @include mq-min('lg'){
-            margin-bottom: 0;
-            margin-right: 32px;
+            // margin-bottom: 0;
+            // margin-right: 32px;
         }
     }
     &_item:last-of-type {
         margin-bottom: 0;
         @include mq-min('lg'){
-            margin-right: 0;
+            // margin-right: 0;
         }
     }
     &_link {
@@ -122,8 +122,8 @@
             font-size: 16px;
         }
         @include mq-min('lg'){
-            color: #444;
-            border: solid 0px #cfcfcf;
+            // color: #444;
+            // border: solid 0px #cfcfcf;
         }
     }
 }

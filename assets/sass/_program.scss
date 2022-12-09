@@ -22,10 +22,10 @@
     width: 30%;
   }
   @include mq-min('lg'){
-    position: static;
-    background-color: unset;
-    transform: translate(0, 0);
-    width: auto;
+    // position: static;
+    // background-color: unset;
+    // transform: translate(0, 0);
+    // width: auto;
   }
 }
 .js_hamburger-btn_line {
@@ -41,8 +41,8 @@
     background-color: #fff;
   }
   @include mq-min('lg'){
-    width: 20px;
-    height: 1px;
+    // width: 20px;
+    // height: 1px;
   }
 }
 .js_hamburger-btn_line:last-of-type {
