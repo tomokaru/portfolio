@@ -49,8 +49,10 @@ $('.smooth a').click(function () {
 
 // WORKSのアコーディオン
   $('.js_work_head').on('click', function () {
-      let findBody = $(this).next(".un_work_body");
-      $(findBody).toggleClass('on');
+    let findWork = $(this).parent(".un_work");
+    let findBody = $(this).next(".un_work_body");
+    $(findBody).toggleClass('on');
+    $(findWork).toggleClass('on');
   })
 
 //スクロール発火処理
@@ -59,9 +61,7 @@ function scrollEffect(){
     let scroll = $(window).scrollTop();//現在のyスクロール量を取得
     let windowHeight = $(window).height();//ウィンドウの高さを取得
     let tgtPos = $(this).offset().top//ターゲットのy位置を取得
-    let subjectHeight = $(this).innerHeight();//ターゲットの高さを取得
     let threshould;//閾値
-    let w = $(window).width();
     threshould = tgtPos - windowHeight + 200;//発火位置調整
     //
     if (scroll > threshould) {//クラスを付与する処理
