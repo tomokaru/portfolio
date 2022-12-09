@@ -149,27 +149,26 @@
   &::after {
     content:"";
     display: block;
-    width: 80px;
-    height: 1px;
-    background-color: #cfcfcf;
+    width: 1px;
+    background-color: #1295b8;
     position: absolute;
-    right: 0;
+    right: 5%;
     bottom: 0;
     animation-name: line;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
   @keyframes line {
     0% {
-      width: 0;
+      height: 60px;
       opacity: 0;
     }
-    60% {
+    50% {
       opacity: 1;
     }
     100% {
-      width: calc(100%/3);
+      height: 0;
       opacity: 0;
     }
   }

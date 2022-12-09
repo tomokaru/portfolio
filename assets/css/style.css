@@ -447,16 +447,15 @@ body {
 .un_work::after {
   content: "";
   display: block;
-  width: 80px;
-  height: 1px;
-  background-color: #cfcfcf;
+  width: 1px;
+  background-color: #1295b8;
   position: absolute;
-  right: 0;
+  right: 5%;
   bottom: 0;
   -webkit-animation-name: line;
   animation-name: line;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
@@ -464,27 +463,27 @@ body {
 }
 @-webkit-keyframes line {
   0% {
-    width: 0;
+    height: 60px;
     opacity: 0;
   }
-  60% {
+  50% {
     opacity: 1;
   }
   100% {
-    width: 33.3333333333%;
+    height: 0;
     opacity: 0;
   }
 }
 @keyframes line {
   0% {
-    width: 0;
+    height: 60px;
     opacity: 0;
   }
-  60% {
+  50% {
     opacity: 1;
   }
   100% {
-    width: 33.3333333333%;
+    height: 0;
     opacity: 0;
   }
 }
