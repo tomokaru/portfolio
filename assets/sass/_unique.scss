@@ -145,6 +145,34 @@
 
 .un_work {
   margin-bottom: 4em;
+  position: relative;
+  &::after {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: #cfcfcf;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation-name: line;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes line {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      width: calc(100%/3);
+      opacity: 0;
+    }
+  }
   &_head {
     display: flex;
     flex-direction: column-reverse;

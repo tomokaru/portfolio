@@ -442,6 +442,51 @@ body {
 
 .un_work {
   margin-bottom: 4em;
+  position: relative;
+}
+.un_work::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: #cfcfcf;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-animation-name: line;
+  animation-name: line;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes line {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    width: 33.3333333333%;
+    opacity: 0;
+  }
+}
+@keyframes line {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    width: 33.3333333333%;
+    opacity: 0;
+  }
 }
 .un_work_head {
   display: flex;
