@@ -25,7 +25,7 @@ $(window).on('load',function(){
 
 //ページ遷移時のロゴアニメーション
 let classname = "-visible";
-let timeout = 2000;
+let timeout = 5000;
 let $target = $(".splash-logo");
 
 setInterval(() => {
