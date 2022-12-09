@@ -161,8 +161,11 @@
   }
   @keyframes line {
     0% {
-      height: 60px;
+      height: 40px;
       opacity: 0;
+      @include mq-min('lg'){
+        height: 40px;
+      }
     }
     50% {
       opacity: 1;

@@ -463,8 +463,13 @@ body {
 }
 @-webkit-keyframes line {
   0% {
-    height: 60px;
+    height: 40px;
     opacity: 0;
+    @media screen and (min-width: 1025px) {
+      .un_work {
+        height: 40px;
+      }
+    }
   }
   50% {
     opacity: 1;
@@ -476,8 +481,13 @@ body {
 }
 @keyframes line {
   0% {
-    height: 60px;
+    height: 40px;
     opacity: 0;
+    @media screen and (min-width: 1025px) {
+      .un_work {
+        height: 40px;
+      }
+    }
   }
   50% {
     opacity: 1;
