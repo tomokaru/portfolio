@@ -441,7 +441,7 @@ body {
     opacity: 1;
   }
   100% {
-    width: 80px;
+    width: 100%;
     opacity: 0;
   }
 }
@@ -454,7 +454,7 @@ body {
     opacity: 1;
   }
   100% {
-    width: 80px;
+    width: 100%;
     opacity: 0;
   }
 }
