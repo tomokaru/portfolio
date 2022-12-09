@@ -122,11 +122,7 @@
 }
 
 .animation_header {
-  animation-name: header;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s;
-  animation-delay: 3.2s;
+  animation: header 1.5s ease-in-out forwards 3.2s;
 }
 @keyframes header {
     0% {
@@ -138,11 +134,7 @@
 }
 
 .animation_ttl {
-  animation-name: ttl;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-duration: 1.2s;
-  animation-delay: 2.8s;
+  animation: ttl 1.2s ease-in-out forwards 2.8s;
 }
 @keyframes ttl {
     0% {
@@ -158,11 +150,7 @@
 }
 
 .animation_txt {
-  animation-name: txt;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-delay: 3s;
+  animation: txt 1s ease-in-out forwards 3s;
 }
 @keyframes txt {
     0% {
@@ -177,11 +165,7 @@
     }
 }
 .animation_object {
-  animation-name: object;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation: object 2s ease-in-out forwards 1s;
 }
 @keyframes object {
     0% {
@@ -195,11 +179,7 @@
 }
 
 .js_scrl-target-fire {
-  animation-name: scrl-target-fire;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-duration: 1.4s;
-  animation-delay: 0s;
+  animation: scrl-target-fire 1.4s ease-in-out forwards 0s;
 }
 @keyframes scrl-target-fire {
     0% {

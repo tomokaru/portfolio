@@ -39,8 +39,7 @@
         min-width: 208px;
         position: absolute;
         &--01 {
-          animation: right-rotate 100s linear infinite;
-          animation-delay: -6s;
+          animation: right-rotate 90s linear infinite -6s;
           z-index: 3;
         }
         &--02 {
@@ -48,8 +47,7 @@
           z-index: 2;
         }
         &--03 {
-          animation: right-rotate 100s linear infinite;
-          animation-delay: 0s;
+          animation: right-rotate 95s linear infinite 2s;
           z-index: 1;
         }
     }
@@ -72,12 +70,6 @@
           opacity: 1;
           transition: 1s;
         }
-    }
-    &_box-txt {
-    animation: left-rotate_txt 100s linear infinite;
-    animation-delay: -6s;
-    opacity: 0;
-    transition: 1s;
     }
 }
   
@@ -142,13 +134,26 @@
   &::after {
     content:"";
     display: block;
-    width: 80px;
     height: 1px;
     background-color: #cfcfcf;
     position: absolute;
     left: 50%;
-    bottom: -1em;
+    bottom: 0em;
     transform: translate(-50%,0);
+    animation: line 1.8s ease-in-out infinite;
+  }
+  @keyframes line {
+    0%{
+      width: 0;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      width: 90px;
+      opacity: 0;
+    }
   }
   &_head {
     display: flex;
