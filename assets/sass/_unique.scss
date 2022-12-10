@@ -118,7 +118,7 @@
     margin-bottom: -0.1em;
   }
   &_img {
-    max-width: 56px;
+    max-width: 40px;
   }
   &_ttl {
     font-size: 16px;
@@ -156,12 +156,15 @@
     width: 1px;
     background-color: #1295b8;
     position: absolute;
-    top: 90%;
+    top: 80%;
     right: 5%;
     animation-name: line;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    @include mq-min('md'){
+      top: 90%;
+    }
   }
   @keyframes line {
     0% {

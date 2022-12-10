@@ -372,7 +372,7 @@ body {
   margin-bottom: -0.1em;
 }
 .un_skill_img {
-  max-width: 56px;
+  max-width: 40px;
 }
 .un_skill_ttl {
   font-size: 16px;
@@ -407,7 +407,7 @@ body {
   width: 1px;
   background-color: #1295b8;
   position: absolute;
-  top: 90%;
+  top: 80%;
   right: 5%;
   -webkit-animation-name: line;
   animation-name: line;
@@ -417,6 +417,11 @@ body {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+@media screen and (min-width: 769px) {
+  .un_work::after {
+    top: 90%;
+  }
 }
 @-webkit-keyframes line {
   0% {
