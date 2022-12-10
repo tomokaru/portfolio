@@ -72,3 +72,5 @@ function scrollEffect(){
 $(window).scroll(function(){
   scrollEffect();
 });
+
+//gsap
