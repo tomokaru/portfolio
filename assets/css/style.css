@@ -104,10 +104,10 @@ body {
 }
 
 .bl_lv2-heading {
-  font-size: 6vw;
-  margin-bottom: 3vw;
+  font-size: 7vw;
+  margin-bottom: 2vw;
   letter-spacing: 0.05em;
-  color: #1295b8;
+  color: #444;
   opacity: 0;
 }
 @media screen and (min-width: 769px) {
@@ -386,7 +386,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 100%;
-  background-color: #1295b8;
+  background-color: #444;
   margin-right: 0.4em;
 }
 .un_skill:last-of-type {
@@ -405,7 +405,7 @@ body {
   display: block;
   transition: 0.7s;
   width: 1px;
-  background-color: #1295b8;
+  background-color: #444;
   position: absolute;
   top: 80%;
   right: 5%;
@@ -514,7 +514,7 @@ body {
 .un_work_ttl {
   font-size: 16px;
   margin-bottom: 2vw;
-  color: #1295b8;
+  color: #444;
   border-bottom: solid 1px #cfcfcf;
   margin-bottom: 1em;
   padding: 0.2em 0 0.5em 0;

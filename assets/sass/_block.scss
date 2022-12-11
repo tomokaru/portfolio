@@ -9,10 +9,10 @@
     color: #444;
 }
 .bl_lv2-heading {
-    font-size: 6vw;
-    margin-bottom: 3vw;
+    font-size: 7vw;
+    margin-bottom: 2vw;
     letter-spacing: 0.05em;
-    color: #1295b8;
+    color: #444;
     opacity: 0;
     @include mq-min('md'){
         font-size: 40px;
