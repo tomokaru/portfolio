@@ -217,14 +217,14 @@
     margin-top: 6vw;
     overflow: hidden;
     max-height: 0px;
-    transition: 0.7s;
+    transition: 0.8s;
     opacity: 0;
     @include mq-min('md'){
       margin-top: 2vw;
     }
     &.on {
       max-height: 500px;
-      transition: 0.7s;
+      transition: 0.8s;
       opacity: 1;
     }
   }

@@ -500,7 +500,7 @@ body {
   margin-top: 6vw;
   overflow: hidden;
   max-height: 0px;
-  transition: 0.7s;
+  transition: 0.8s;
   opacity: 0;
 }
 @media screen and (min-width: 769px) {
@@ -510,7 +510,7 @@ body {
 }
 .un_work_body.on {
   max-height: 500px;
-  transition: 0.7s;
+  transition: 0.8s;
   opacity: 1;
 }
 .un_work_ttl {
