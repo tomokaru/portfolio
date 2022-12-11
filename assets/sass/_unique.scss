@@ -218,12 +218,14 @@
     overflow: hidden;
     max-height: 0px;
     transition: 0.7s;
+    opacity: 0;
     @include mq-min('md'){
       margin-top: 2vw;
     }
     &.on {
       max-height: 500px;
       transition: 0.7s;
+      opacity: 1;
     }
   }
   &_ttl {
