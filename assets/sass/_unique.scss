@@ -144,7 +144,7 @@
 }
 
 .un_work {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   position: relative;
   &.on::after {
     width: 0;
@@ -156,14 +156,14 @@
     width: 1px;
     background-color: #444;
     position: absolute;
-    top: 80%;
+    top: 78%;
     right: 5%;
     animation-name: line;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     @include mq-min('md'){
-      top: 90%;
+      top: 84%;
     }
   }
   @keyframes line {
@@ -189,7 +189,7 @@
         opacity: 1;
       }
       100% {
-        height: 60px;
+        height: 80px;
         opacity: 0;
       }
     }
