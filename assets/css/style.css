@@ -737,8 +737,8 @@ body {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
 }
 
 @-webkit-keyframes ttl {
@@ -775,8 +775,8 @@ body {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 3.4s;
+  animation-delay: 3.4s;
 }
 
 @-webkit-keyframes txt {
