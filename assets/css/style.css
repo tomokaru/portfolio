@@ -134,6 +134,9 @@ body {
 .bl_content {
   opacity: 0;
 }
+.bl_content__designcompetition {
+  margin-top: 6em;
+}
 
 .bl_txt {
   margin-bottom: 16px;
@@ -195,7 +198,6 @@ body {
   color: #444;
   letter-spacing: 0.1em;
   display: block;
-  border: solid 1px #cfcfcf;
   padding: 0.3em 0.7em 0.2em 0.7em;
   color: #fff;
 }
@@ -515,6 +517,7 @@ body {
 }
 .un_work_ttl {
   font-size: 16px;
+  font-weight: bold;
   margin-bottom: 2vw;
   color: #444;
   border-bottom: solid 1px #cfcfcf;
