@@ -46,6 +46,10 @@
 }
 .bl_txt {
     margin-bottom: 16px;
+    font-size: 12px;
+    @include mq-min('sm'){
+      font-size: 14px;
+    }
 }
 .bl_link {
     color: #777;

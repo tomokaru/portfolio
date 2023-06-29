@@ -145,6 +145,12 @@ body {
 
 .bl_txt {
   margin-bottom: 16px;
+  font-size: 12px;
+}
+@media screen and (min-width: 426px) {
+  .bl_txt {
+    font-size: 14px;
+  }
 }
 
 .bl_link {
@@ -402,6 +408,15 @@ body {
   background-color: #444;
   margin-right: 0.4em;
 }
+.un_skill_txt {
+  font-size: 12px;
+}
+@media screen and (min-width: 426px) {
+  .un_skill_txt {
+    font-size: 14px;
+  }
+}
+
 .un_skill:last-of-type {
   margin-bottom: 0;
 }
@@ -527,14 +542,20 @@ body {
   opacity: 1;
 }
 .un_work_ttl {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 2vw;
   color: #444;
   border-bottom: solid 1px #cfcfcf;
   margin-bottom: 1em;
-  padding: 0.2em 0 0.5em 0;
+  padding: 0.2em 0 0.2em 0;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 500;
+}
+@media screen and (min-width: 426px) {
+  .un_work_ttl {
+    font-size: 16px;
+    padding: 0.2em 0 0.5em 0;
+  }
 }
 .un_work_dt {
   font-size: 11px;
@@ -561,11 +582,17 @@ body {
 }
 .un_work_dd {
   color: #444;
-  font-size: 14px;
+  font-size: 12px;
   border-bottom: solid 1px #cfcfcf;
   margin-bottom: 1em;
-  padding: 0.2em 0 0.5em 0;
+  padding: 0.2em 0 0.2em 0;
   width: 100%;
+}
+@media screen and (min-width: 426px) {
+  .un_work_dd {
+    font-size: 14px;
+    padding: 0.2em 0 0.5em 0;
+  }
 }
 @media screen and (min-width: 769px) {
   .un_work_dd {
@@ -649,7 +676,7 @@ body {
 
 .splash-logo {
   position: absolute;
-  top: 51%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;

@@ -140,7 +140,10 @@
     }
   }
   &_txt {
-
+    font-size: 12px;
+    @include mq-min('sm'){
+      font-size: 14px;
+    }
   }
 }
 .un_skill:last-of-type {
@@ -233,15 +236,19 @@
     }
   }
   &_ttl {
-    font-size: 16px;
+    font-size: 14px;
     // font-weight: bold;
     margin-bottom: 2vw;
     color: #444;
     border-bottom: solid 1px #cfcfcf;
     margin-bottom: 1em;
-    padding: 0.2em 0 0.5em 0;
+    padding: 0.2em 0 0.2em 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-weight: 500;
+    @include mq-min('sm'){
+      font-size: 16px;
+      padding: 0.2em 0 0.5em 0;
+    }
   }
   &_dl {
 
@@ -269,11 +276,15 @@
   }
   &_dd {
     color: #444;
-    font-size: 14px;
+    font-size: 12px;
     border-bottom: solid 1px #cfcfcf;
     margin-bottom: 1em;
-    padding: 0.2em 0 0.5em 0;
+    padding: 0.2em 0 0.2em 0;
     width: 100%;
+    @include mq-min('sm'){
+      font-size: 14px;
+      padding: 0.2em 0 0.5em 0;
+    }
     @include mq-min('md'){
       padding-left: 8em;
       padding: 0 0 0.5em 10em;
