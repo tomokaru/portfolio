@@ -20,7 +20,7 @@ main.on('click', function() {
 
 //ページ遷移時のローディング
 $(window).on('load',function(){
-  $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+  $("#splash").delay(1700).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
 });
 
 //ページ遷移時のロゴアニメーション
